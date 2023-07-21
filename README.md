@@ -2,13 +2,6 @@
 
 <p align="center"> <img src='img/MonoSKD.png' align="center" height="350px"> </p>
 
-## Introduction
-
-In this section, our supplementary material consists of the following parts:
-
-1. **Results submitted by KITTI official**. We provide screenshots of the submission results of MonoSKD+MonoDLE and MonoSKD+DID-M3D.
-2. **An appendix**. Due to space constraints, we added more descriptions and related experiments in the appendix.
-3. **Code**. Considering the reproducibility of **IJCAI**, we provide reviewers with a complete runnable code
 
 ## Abstract
 
