@@ -1,0 +1,710 @@
+2023-01-22 22:45:14,844   INFO  ###################  Training  ##################
+2023-01-22 22:45:14,844   INFO  KD type: ['fg_kd', 'affinity_kd', 'head_kd']
+2023-01-22 22:45:14,844   INFO  Batch Size: 16
+2023-01-22 22:45:14,844   INFO  Learning Rate: 0.001000
+2023-01-22 22:45:14,844   INFO  Max Epoch: 150
+2023-01-22 22:45:14,844   INFO  Model Type: distill
+2023-01-22 22:45:14,844   INFO  Writelist: ['Car']
+2023-01-22 22:45:14,844   INFO  Log_dir: kitti_models/logs/monodistill
+2023-01-22 22:45:14,844   INFO  ==> Loading from checkpoint 'rgb_pretrain_car_17.77.pth'
+2023-01-22 22:45:16,473   INFO  ==> Done
+2023-01-22 22:45:16,474   INFO  ==> Loading from checkpoint 'depth_pretrain_car_43.81.pth'
+2023-01-22 22:45:16,747   INFO  ==> Done
+2023-01-22 22:47:05,472   INFO  ------ TRAIN EPOCH 001 ------
+2023-01-22 22:47:05,472   INFO  Learning Rate: 0.000010
+2023-01-22 22:47:05,474   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 22:49:08,950   INFO  BATCH[0200/0232] affinity_kd:12.9449, backbone_loss_l1:2.0865, depth_loss:1.2927, head_kd:6.3679, heading_loss:0.0808, offset2d_loss:0.2575, offset3d_loss:0.2138, seg_loss:0.1831, size2d_loss:0.5079, size3d_loss:0.0808,
+2023-01-22 22:49:26,049   INFO  ------ TRAIN EPOCH 002 ------
+2023-01-22 22:49:26,050   INFO  Learning Rate: 0.000105
+2023-01-22 22:49:26,050   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 22:51:29,665   INFO  BATCH[0200/0232] affinity_kd:9.3799, backbone_loss_l1:0.5344, depth_loss:1.5435, head_kd:5.3526, heading_loss:0.0961, offset2d_loss:0.2643, offset3d_loss:0.2140, seg_loss:0.1833, size2d_loss:0.5409, size3d_loss:0.0842,
+2023-01-22 22:51:46,713   INFO  ------ TRAIN EPOCH 003 ------
+2023-01-22 22:51:46,713   INFO  Learning Rate: 0.000352
+2023-01-22 22:51:46,715   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 22:53:50,238   INFO  BATCH[0200/0232] affinity_kd:8.3187, backbone_loss_l1:0.3826, depth_loss:2.0485, head_kd:4.9429, heading_loss:0.1116, offset2d_loss:0.2714, offset3d_loss:0.2156, seg_loss:0.1927, size2d_loss:0.5893, size3d_loss:0.0890,
+2023-01-22 22:54:07,295   INFO  ------ TRAIN EPOCH 004 ------
+2023-01-22 22:54:07,296   INFO  Learning Rate: 0.000658
+2023-01-22 22:54:07,297   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 22:56:11,384   INFO  BATCH[0200/0232] affinity_kd:7.8402, backbone_loss_l1:0.3450, depth_loss:2.7717, head_kd:5.2662, heading_loss:0.1349, offset2d_loss:0.2879, offset3d_loss:0.2195, seg_loss:0.2223, size2d_loss:0.7020, size3d_loss:0.0950,
+2023-01-22 22:56:28,487   INFO  ------ TRAIN EPOCH 005 ------
+2023-01-22 22:56:28,487   INFO  Learning Rate: 0.000905
+2023-01-22 22:56:28,489   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 22:58:30,766   INFO  BATCH[0200/0232] affinity_kd:7.4502, backbone_loss_l1:0.3184, depth_loss:3.1034, head_kd:5.2797, heading_loss:0.1616, offset2d_loss:0.2993, offset3d_loss:0.2182, seg_loss:0.2467, size2d_loss:0.7509, size3d_loss:0.0980,
+2023-01-22 22:58:47,752   INFO  ------ TRAIN EPOCH 006 ------
+2023-01-22 22:58:47,753   INFO  Learning Rate: 0.001000
+2023-01-22 22:58:47,754   INFO  Weights:  depth_:0.0000, heading_:0.0000, offset2d_:1.0000, offset3d_:0.0000, seg_:1.0000, size2d_:1.0000, size3d_:0.0000,
+2023-01-22 23:00:52,927   INFO  BATCH[0200/0232] affinity_kd:7.1805, backbone_loss_l1:0.2951, depth_loss:3.1196, head_kd:5.1997, heading_loss:0.1758, offset2d_loss:0.3111, offset3d_loss:0.2230, seg_loss:0.2577, size2d_loss:0.7851, size3d_loss:0.1004,
+2023-01-22 23:01:10,320   INFO  ------ TRAIN EPOCH 007 ------
+2023-01-22 23:01:10,320   INFO  Learning Rate: 0.001000
+2023-01-22 23:01:10,324   INFO  Weights:  depth_:0.0074, heading_:0.0074, offset2d_:1.0000, offset3d_:0.0074, seg_:1.0000, size2d_:1.0000, size3d_:0.0074,
+2023-01-22 23:03:14,322   INFO  BATCH[0200/0232] affinity_kd:7.0410, backbone_loss_l1:0.2812, depth_loss:2.6514, head_kd:5.1316, heading_loss:0.1916, offset2d_loss:0.3107, offset3d_loss:0.2226, seg_loss:0.2607, size2d_loss:0.7551, size3d_loss:0.1027,
+2023-01-22 23:03:31,709   INFO  ------ TRAIN EPOCH 008 ------
+2023-01-22 23:03:31,710   INFO  Learning Rate: 0.001000
+2023-01-22 23:03:31,715   INFO  Weights:  depth_:0.0134, heading_:0.1086, offset2d_:1.0000, offset3d_:0.1086, seg_:1.0000, size2d_:1.0000, size3d_:0.1086,
+2023-01-22 23:05:37,956   INFO  BATCH[0200/0232] affinity_kd:6.7786, backbone_loss_l1:0.2585, depth_loss:2.6500, head_kd:5.0713, heading_loss:0.1767, offset2d_loss:0.3000, offset3d_loss:0.2213, seg_loss:0.2568, size2d_loss:0.7434, size3d_loss:0.1016,
+2023-01-22 23:05:55,188   INFO  ------ TRAIN EPOCH 009 ------
+2023-01-22 23:05:55,189   INFO  Learning Rate: 0.001000
+2023-01-22 23:05:55,197   INFO  Weights:  depth_:0.0501, heading_:0.2789, offset2d_:1.0000, offset3d_:0.2789, seg_:1.0000, size2d_:1.0000, size3d_:0.2789,
+2023-01-22 23:08:01,382   INFO  BATCH[0200/0232] affinity_kd:6.6710, backbone_loss_l1:0.2508, depth_loss:2.6604, head_kd:5.0986, heading_loss:0.1697, offset2d_loss:0.2992, offset3d_loss:0.2218, seg_loss:0.2492, size2d_loss:0.7542, size3d_loss:0.1007,
+2023-01-22 23:08:18,603   INFO  ------ TRAIN EPOCH 010 ------
+2023-01-22 23:08:18,604   INFO  Learning Rate: 0.001000
+2023-01-22 23:08:18,609   INFO  Weights:  depth_:0.2933, heading_:0.3958, offset2d_:1.0000, offset3d_:0.3958, seg_:1.0000, size2d_:1.0000, size3d_:0.3958,
+2023-01-22 23:10:22,477   INFO  BATCH[0200/0232] affinity_kd:6.5394, backbone_loss_l1:0.2404, depth_loss:2.5714, head_kd:4.8949, heading_loss:0.1796, offset2d_loss:0.2998, offset3d_loss:0.2199, seg_loss:0.2521, size2d_loss:0.7783, size3d_loss:0.1009,
+2023-01-22 23:10:39,668   INFO  ------ TRAIN EPOCH 011 ------
+2023-01-22 23:10:39,668   INFO  Learning Rate: 0.001000
+2023-01-22 23:10:39,673   INFO  Weights:  depth_:0.4922, heading_:0.4922, offset2d_:1.0000, offset3d_:0.4922, seg_:1.0000, size2d_:1.0000, size3d_:0.4922,
+2023-01-22 23:12:47,365   INFO  BATCH[0200/0232] affinity_kd:6.5221, backbone_loss_l1:0.2383, depth_loss:2.5170, head_kd:4.7950, heading_loss:0.1744, offset2d_loss:0.2928, offset3d_loss:0.2216, seg_loss:0.2403, size2d_loss:0.7027, size3d_loss:0.0986,
+2023-01-22 23:13:04,839   INFO  ------ TRAIN EPOCH 012 ------
+2023-01-22 23:13:04,844   INFO  Learning Rate: 0.001000
+2023-01-22 23:13:04,846   INFO  Weights:  depth_:0.5731, heading_:0.5731, offset2d_:1.0000, offset3d_:0.5731, seg_:1.0000, size2d_:1.0000, size3d_:0.5731,
+2023-01-22 23:15:09,929   INFO  BATCH[0200/0232] affinity_kd:6.4254, backbone_loss_l1:0.2313, depth_loss:2.4213, head_kd:4.7966, heading_loss:0.1756, offset2d_loss:0.3047, offset3d_loss:0.2201, seg_loss:0.2484, size2d_loss:0.7439, size3d_loss:0.0978,
+2023-01-22 23:15:27,205   INFO  ------ TRAIN EPOCH 013 ------
+2023-01-22 23:15:27,206   INFO  Learning Rate: 0.001000
+2023-01-22 23:15:27,919   INFO  Weights:  depth_:0.6694, heading_:0.6694, offset2d_:1.0000, offset3d_:0.6694, seg_:1.0000, size2d_:1.0000, size3d_:0.6694,
+2023-01-22 23:17:33,038   INFO  BATCH[0200/0232] affinity_kd:6.3262, backbone_loss_l1:0.2260, depth_loss:2.3571, head_kd:4.6532, heading_loss:0.1632, offset2d_loss:0.2931, offset3d_loss:0.2196, seg_loss:0.2434, size2d_loss:0.7248, size3d_loss:0.0986,
+2023-01-22 23:17:50,660   INFO  ------ TRAIN EPOCH 014 ------
+2023-01-22 23:17:50,661   INFO  Learning Rate: 0.001000
+2023-01-22 23:17:51,433   INFO  Weights:  depth_:0.7591, heading_:0.7591, offset2d_:1.0000, offset3d_:0.7591, seg_:1.0000, size2d_:1.0000, size3d_:0.7591,
+2023-01-22 23:19:58,649   INFO  BATCH[0200/0232] affinity_kd:6.3847, backbone_loss_l1:0.2242, depth_loss:2.2561, head_kd:4.6757, heading_loss:0.1636, offset2d_loss:0.2993, offset3d_loss:0.2200, seg_loss:0.2525, size2d_loss:0.7508, size3d_loss:0.0988,
+2023-01-22 23:20:16,194   INFO  ------ TRAIN EPOCH 015 ------
+2023-01-22 23:20:16,194   INFO  Learning Rate: 0.001000
+2023-01-22 23:20:16,850   INFO  Weights:  depth_:0.7802, heading_:0.7802, offset2d_:1.0000, offset3d_:0.7802, seg_:1.0000, size2d_:1.0000, size3d_:0.7802,
+2023-01-22 23:22:21,940   INFO  BATCH[0200/0232] affinity_kd:6.2712, backbone_loss_l1:0.2208, depth_loss:2.3435, head_kd:4.7960, heading_loss:0.1688, offset2d_loss:0.2984, offset3d_loss:0.2207, seg_loss:0.2461, size2d_loss:0.7831, size3d_loss:0.0985,
+2023-01-22 23:22:39,555   INFO  ------ TRAIN EPOCH 016 ------
+2023-01-22 23:22:39,556   INFO  Learning Rate: 0.001000
+2023-01-22 23:22:40,291   INFO  Weights:  depth_:0.8130, heading_:0.8274, offset2d_:1.0000, offset3d_:0.8274, seg_:1.0000, size2d_:1.0000, size3d_:0.8274,
+2023-01-22 23:24:45,029   INFO  BATCH[0200/0232] affinity_kd:6.2318, backbone_loss_l1:0.2167, depth_loss:2.3276, head_kd:4.6090, heading_loss:0.1594, offset2d_loss:0.2954, offset3d_loss:0.2192, seg_loss:0.2359, size2d_loss:0.7037, size3d_loss:0.0980,
+2023-01-22 23:25:02,475   INFO  ------ TRAIN EPOCH 017 ------
+2023-01-22 23:25:02,476   INFO  Learning Rate: 0.001000
+2023-01-22 23:25:03,315   INFO  Weights:  depth_:0.4962, heading_:0.8629, offset2d_:1.0000, offset3d_:0.8629, seg_:1.0000, size2d_:1.0000, size3d_:0.8629,
+2023-01-22 23:27:10,364   INFO  BATCH[0200/0232] affinity_kd:6.2368, backbone_loss_l1:0.2144, depth_loss:2.2348, head_kd:4.6269, heading_loss:0.1487, offset2d_loss:0.2878, offset3d_loss:0.2187, seg_loss:0.2479, size2d_loss:0.7307, size3d_loss:0.0967,
+2023-01-22 23:27:27,746   INFO  ------ TRAIN EPOCH 018 ------
+2023-01-22 23:27:27,747   INFO  Learning Rate: 0.001000
+2023-01-22 23:27:28,492   INFO  Weights:  depth_:0.8134, heading_:0.9009, offset2d_:1.0000, offset3d_:0.9009, seg_:1.0000, size2d_:1.0000, size3d_:0.9009,
+2023-01-22 23:29:34,289   INFO  BATCH[0200/0232] affinity_kd:6.2063, backbone_loss_l1:0.2131, depth_loss:2.2891, head_kd:4.6708, heading_loss:0.1497, offset2d_loss:0.2982, offset3d_loss:0.2186, seg_loss:0.2362, size2d_loss:0.7338, size3d_loss:0.0973,
+2023-01-22 23:29:56,279   INFO  ------ TRAIN EPOCH 019 ------
+2023-01-22 23:29:56,280   INFO  Learning Rate: 0.001000
+2023-01-22 23:29:57,031   INFO  Weights:  depth_:0.9089, heading_:0.9089, offset2d_:1.0000, offset3d_:0.9089, seg_:1.0000, size2d_:1.0000, size3d_:0.9089,
+2023-01-22 23:32:48,120   INFO  BATCH[0200/0232] affinity_kd:6.2505, backbone_loss_l1:0.2073, depth_loss:2.2111, head_kd:4.6069, heading_loss:0.1624, offset2d_loss:0.3018, offset3d_loss:0.2181, seg_loss:0.2655, size2d_loss:0.7507, size3d_loss:0.0980,
+2023-01-22 23:33:13,982   INFO  ------ TRAIN EPOCH 020 ------
+2023-01-22 23:33:13,983   INFO  Learning Rate: 0.001000
+2023-01-22 23:33:14,724   INFO  Weights:  depth_:0.9069, heading_:0.9069, offset2d_:1.0000, offset3d_:0.9069, seg_:1.0000, size2d_:1.0000, size3d_:0.9069,
+2023-01-22 23:35:24,891   INFO  BATCH[0200/0232] affinity_kd:6.0739, backbone_loss_l1:0.2024, depth_loss:2.1835, head_kd:4.4858, heading_loss:0.1498, offset2d_loss:0.2943, offset3d_loss:0.2202, seg_loss:0.2396, size2d_loss:0.7158, size3d_loss:0.0951,
+2023-01-22 23:35:42,598   INFO  ------ TRAIN EPOCH 021 ------
+2023-01-22 23:35:42,599   INFO  Learning Rate: 0.001000
+2023-01-22 23:35:43,510   INFO  Weights:  depth_:0.9426, heading_:0.9426, offset2d_:1.0000, offset3d_:0.9426, seg_:1.0000, size2d_:1.0000, size3d_:0.9426,
+2023-01-22 23:37:54,199   INFO  BATCH[0200/0232] affinity_kd:6.0793, backbone_loss_l1:0.2013, depth_loss:2.2115, head_kd:4.6101, heading_loss:0.1457, offset2d_loss:0.2987, offset3d_loss:0.2186, seg_loss:0.2463, size2d_loss:0.7436, size3d_loss:0.0957,
+2023-01-22 23:38:12,218   INFO  ------ TRAIN EPOCH 022 ------
+2023-01-22 23:38:12,218   INFO  Learning Rate: 0.001000
+2023-01-22 23:38:13,072   INFO  Weights:  depth_:0.8119, heading_:0.9220, offset2d_:1.0000, offset3d_:0.9220, seg_:1.0000, size2d_:1.0000, size3d_:0.9220,
+2023-01-22 23:40:25,126   INFO  BATCH[0200/0232] affinity_kd:6.0214, backbone_loss_l1:0.1995, depth_loss:2.1231, head_kd:4.4102, heading_loss:0.1406, offset2d_loss:0.2947, offset3d_loss:0.2182, seg_loss:0.2339, size2d_loss:0.7163, size3d_loss:0.0957,
+2023-01-22 23:40:42,850   INFO  ------ TRAIN EPOCH 023 ------
+2023-01-22 23:40:42,850   INFO  Learning Rate: 0.001000
+2023-01-22 23:40:43,648   INFO  Weights:  depth_:0.9120, heading_:0.9120, offset2d_:1.0000, offset3d_:0.9120, seg_:1.0000, size2d_:1.0000, size3d_:0.9120,
+2023-01-22 23:42:55,471   INFO  BATCH[0200/0232] affinity_kd:5.9846, backbone_loss_l1:0.1967, depth_loss:2.0356, head_kd:4.2731, heading_loss:0.1381, offset2d_loss:0.2849, offset3d_loss:0.2169, seg_loss:0.2299, size2d_loss:0.6767, size3d_loss:0.0939,
+2023-01-22 23:43:13,315   INFO  ------ TRAIN EPOCH 024 ------
+2023-01-22 23:43:13,316   INFO  Learning Rate: 0.001000
+2023-01-22 23:43:14,076   INFO  Weights:  depth_:0.9044, heading_:0.9044, offset2d_:1.0000, offset3d_:0.9044, seg_:1.0000, size2d_:1.0000, size3d_:0.9044,
+2023-01-22 23:45:25,999   INFO  BATCH[0200/0232] affinity_kd:5.9373, backbone_loss_l1:0.1933, depth_loss:2.1536, head_kd:4.3892, heading_loss:0.1399, offset2d_loss:0.2852, offset3d_loss:0.2179, seg_loss:0.2265, size2d_loss:0.6992, size3d_loss:0.0937,
+2023-01-22 23:45:43,703   INFO  ------ TRAIN EPOCH 025 ------
+2023-01-22 23:45:43,703   INFO  Learning Rate: 0.001000
+2023-01-22 23:45:44,498   INFO  Weights:  depth_:0.9043, heading_:0.9043, offset2d_:1.0000, offset3d_:0.9043, seg_:1.0000, size2d_:1.0000, size3d_:0.9043,
+2023-01-22 23:48:32,896   INFO  BATCH[0200/0232] affinity_kd:5.9735, backbone_loss_l1:0.1948, depth_loss:2.1211, head_kd:4.4455, heading_loss:0.1374, offset2d_loss:0.2858, offset3d_loss:0.2194, seg_loss:0.2334, size2d_loss:0.7301, size3d_loss:0.0933,
+2023-01-22 23:48:58,869   INFO  ------ TRAIN EPOCH 026 ------
+2023-01-22 23:48:58,869   INFO  Learning Rate: 0.001000
+2023-01-22 23:48:59,626   INFO  Weights:  depth_:0.9161, heading_:0.9161, offset2d_:1.0000, offset3d_:0.9161, seg_:1.0000, size2d_:1.0000, size3d_:0.9161,
+2023-01-22 23:51:53,290   INFO  BATCH[0200/0232] affinity_kd:5.9143, backbone_loss_l1:0.1895, depth_loss:2.0373, head_kd:4.2970, heading_loss:0.1391, offset2d_loss:0.2873, offset3d_loss:0.2193, seg_loss:0.2308, size2d_loss:0.6912, size3d_loss:0.0938,
+2023-01-22 23:52:19,391   INFO  ------ TRAIN EPOCH 027 ------
+2023-01-22 23:52:19,392   INFO  Learning Rate: 0.001000
+2023-01-22 23:52:20,054   INFO  Weights:  depth_:0.9319, heading_:0.9319, offset2d_:1.0000, offset3d_:0.9319, seg_:1.0000, size2d_:1.0000, size3d_:0.9319,
+2023-01-22 23:55:15,351   INFO  BATCH[0200/0232] affinity_kd:5.8674, backbone_loss_l1:0.1892, depth_loss:2.2329, head_kd:4.4574, heading_loss:0.1317, offset2d_loss:0.2804, offset3d_loss:0.2166, seg_loss:0.2265, size2d_loss:0.6904, size3d_loss:0.0938,
+2023-01-22 23:55:41,316   INFO  ------ TRAIN EPOCH 028 ------
+2023-01-22 23:55:41,317   INFO  Learning Rate: 0.001000
+2023-01-22 23:55:42,121   INFO  Weights:  depth_:0.8364, heading_:0.9586, offset2d_:1.0000, offset3d_:0.9586, seg_:1.0000, size2d_:1.0000, size3d_:0.9586,
+2023-01-22 23:58:37,097   INFO  BATCH[0200/0232] affinity_kd:5.8535, backbone_loss_l1:0.1865, depth_loss:2.0430, head_kd:4.2150, heading_loss:0.1273, offset2d_loss:0.2809, offset3d_loss:0.2182, seg_loss:0.2216, size2d_loss:0.6907, size3d_loss:0.0934,
+2023-01-22 23:59:01,518   INFO  ------ TRAIN EPOCH 029 ------
+2023-01-22 23:59:01,519   INFO  Learning Rate: 0.001000
+2023-01-22 23:59:02,307   INFO  Weights:  depth_:0.8939, heading_:0.9574, offset2d_:1.0000, offset3d_:0.9574, seg_:1.0000, size2d_:1.0000, size3d_:0.9574,
+2023-01-23 00:01:55,536   INFO  BATCH[0200/0232] affinity_kd:5.8063, backbone_loss_l1:0.1856, depth_loss:1.9496, head_kd:4.1891, heading_loss:0.1294, offset2d_loss:0.2784, offset3d_loss:0.2167, seg_loss:0.2170, size2d_loss:0.6715, size3d_loss:0.0926,
+2023-01-23 00:02:20,339   INFO  ------ TRAIN EPOCH 030 ------
+2023-01-23 00:02:20,340   INFO  Learning Rate: 0.001000
+2023-01-23 00:02:21,140   INFO  Weights:  depth_:0.9447, heading_:0.9447, offset2d_:1.0000, offset3d_:0.9447, seg_:1.0000, size2d_:1.0000, size3d_:0.9447,
+2023-01-23 00:05:14,160   INFO  BATCH[0200/0232] affinity_kd:5.8502, backbone_loss_l1:0.1849, depth_loss:2.0470, head_kd:4.3373, heading_loss:0.1302, offset2d_loss:0.2877, offset3d_loss:0.2178, seg_loss:0.2231, size2d_loss:0.6725, size3d_loss:0.0927,
+2023-01-23 00:05:39,974   INFO  ------ TRAIN EPOCH 031 ------
+2023-01-23 00:05:39,975   INFO  Learning Rate: 0.001000
+2023-01-23 00:05:40,767   INFO  Weights:  depth_:0.9379, heading_:0.9379, offset2d_:1.0000, offset3d_:0.9379, seg_:1.0000, size2d_:1.0000, size3d_:0.9379,
+2023-01-23 00:08:35,474   INFO  BATCH[0200/0232] affinity_kd:5.8050, backbone_loss_l1:0.1855, depth_loss:2.0805, head_kd:4.3235, heading_loss:0.1284, offset2d_loss:0.2808, offset3d_loss:0.2152, seg_loss:0.2188, size2d_loss:0.6833, size3d_loss:0.0918,
+2023-01-23 00:09:01,223   INFO  ------ TRAIN EPOCH 032 ------
+2023-01-23 00:09:01,224   INFO  Learning Rate: 0.001000
+2023-01-23 00:09:01,909   INFO  Weights:  depth_:0.9641, heading_:0.9641, offset2d_:1.0000, offset3d_:0.9641, seg_:1.0000, size2d_:1.0000, size3d_:0.9641,
+2023-01-23 00:11:56,333   INFO  BATCH[0200/0232] affinity_kd:5.7451, backbone_loss_l1:0.1795, depth_loss:1.9320, head_kd:4.2185, heading_loss:0.1278, offset2d_loss:0.2832, offset3d_loss:0.2170, seg_loss:0.2281, size2d_loss:0.6766, size3d_loss:0.0923,
+2023-01-23 00:12:22,180   INFO  ------ TRAIN EPOCH 033 ------
+2023-01-23 00:12:22,181   INFO  Learning Rate: 0.001000
+2023-01-23 00:12:22,932   INFO  Weights:  depth_:0.9778, heading_:0.9778, offset2d_:1.0000, offset3d_:0.9778, seg_:1.0000, size2d_:1.0000, size3d_:0.9778,
+2023-01-23 00:15:16,747   INFO  BATCH[0200/0232] affinity_kd:5.7355, backbone_loss_l1:0.1788, depth_loss:1.9388, head_kd:4.1297, heading_loss:0.1304, offset2d_loss:0.2809, offset3d_loss:0.2176, seg_loss:0.2272, size2d_loss:0.6675, size3d_loss:0.0926,
+2023-01-23 00:15:42,087   INFO  ------ TRAIN EPOCH 034 ------
+2023-01-23 00:15:42,088   INFO  Learning Rate: 0.001000
+2023-01-23 00:15:42,801   INFO  Weights:  depth_:0.9660, heading_:0.9660, offset2d_:1.0000, offset3d_:0.9660, seg_:1.0000, size2d_:1.0000, size3d_:0.9660,
+2023-01-23 00:18:37,543   INFO  BATCH[0200/0232] affinity_kd:5.7608, backbone_loss_l1:0.1780, depth_loss:1.9318, head_kd:4.2331, heading_loss:0.1216, offset2d_loss:0.2774, offset3d_loss:0.2174, seg_loss:0.2100, size2d_loss:0.6780, size3d_loss:0.0923,
+2023-01-23 00:19:01,412   INFO  ------ TRAIN EPOCH 035 ------
+2023-01-23 00:19:01,413   INFO  Learning Rate: 0.001000
+2023-01-23 00:19:02,114   INFO  Weights:  depth_:0.9490, heading_:0.9490, offset2d_:1.0000, offset3d_:0.9490, seg_:1.0000, size2d_:1.0000, size3d_:0.9490,
+2023-01-23 00:21:55,259   INFO  BATCH[0200/0232] affinity_kd:5.6964, backbone_loss_l1:0.1783, depth_loss:1.9807, head_kd:4.1915, heading_loss:0.1220, offset2d_loss:0.2789, offset3d_loss:0.2166, seg_loss:0.2159, size2d_loss:0.6834, size3d_loss:0.0922,
+2023-01-23 00:22:21,034   INFO  ------ TRAIN EPOCH 036 ------
+2023-01-23 00:22:21,035   INFO  Learning Rate: 0.001000
+2023-01-23 00:22:21,765   INFO  Weights:  depth_:0.9304, heading_:0.9547, offset2d_:1.0000, offset3d_:0.9547, seg_:1.0000, size2d_:1.0000, size3d_:0.9547,
+2023-01-23 00:25:13,998   INFO  BATCH[0200/0232] affinity_kd:5.7080, backbone_loss_l1:0.1761, depth_loss:1.9149, head_kd:4.1269, heading_loss:0.1235, offset2d_loss:0.2909, offset3d_loss:0.2181, seg_loss:0.2207, size2d_loss:0.6878, size3d_loss:0.0909,
+2023-01-23 00:25:39,738   INFO  ------ TRAIN EPOCH 037 ------
+2023-01-23 00:25:39,739   INFO  Learning Rate: 0.001000
+2023-01-23 00:25:40,526   INFO  Weights:  depth_:0.9015, heading_:0.9738, offset2d_:1.0000, offset3d_:0.9738, seg_:1.0000, size2d_:1.0000, size3d_:0.9738,
+2023-01-23 00:28:34,042   INFO  BATCH[0200/0232] affinity_kd:5.7067, backbone_loss_l1:0.1766, depth_loss:1.8357, head_kd:4.1414, heading_loss:0.1216, offset2d_loss:0.2817, offset3d_loss:0.2175, seg_loss:0.2220, size2d_loss:0.6895, size3d_loss:0.0914,
+2023-01-23 00:28:59,747   INFO  ------ TRAIN EPOCH 038 ------
+2023-01-23 00:28:59,748   INFO  Learning Rate: 0.001000
+2023-01-23 00:29:00,452   INFO  Weights:  depth_:0.9441, heading_:0.9793, offset2d_:1.0000, offset3d_:0.9793, seg_:1.0000, size2d_:1.0000, size3d_:0.9793,
+2023-01-23 00:31:53,301   INFO  BATCH[0200/0232] affinity_kd:5.6875, backbone_loss_l1:0.1746, depth_loss:1.9515, head_kd:4.1359, heading_loss:0.1221, offset2d_loss:0.2763, offset3d_loss:0.2166, seg_loss:0.2158, size2d_loss:0.6700, size3d_loss:0.0913,
+2023-01-23 00:32:19,055   INFO  ------ TRAIN EPOCH 039 ------
+2023-01-23 00:32:19,056   INFO  Learning Rate: 0.001000
+2023-01-23 00:32:19,725   INFO  Weights:  depth_:0.9746, heading_:0.9746, offset2d_:1.0000, offset3d_:0.9746, seg_:1.0000, size2d_:1.0000, size3d_:0.9746,
+2023-01-23 00:35:11,878   INFO  BATCH[0200/0232] affinity_kd:5.6369, backbone_loss_l1:0.1766, depth_loss:2.1481, head_kd:4.2290, heading_loss:0.1264, offset2d_loss:0.2730, offset3d_loss:0.2161, seg_loss:0.2106, size2d_loss:0.6490, size3d_loss:0.0917,
+2023-01-23 00:35:37,597   INFO  ------ TRAIN EPOCH 040 ------
+2023-01-23 00:35:37,598   INFO  Learning Rate: 0.001000
+2023-01-23 00:35:38,277   INFO  Weights:  depth_:0.9780, heading_:0.9780, offset2d_:1.0000, offset3d_:0.9780, seg_:1.0000, size2d_:1.0000, size3d_:0.9780,
+2023-01-23 00:38:33,064   INFO  BATCH[0200/0232] affinity_kd:5.6444, backbone_loss_l1:0.1736, depth_loss:1.8494, head_kd:4.1291, heading_loss:0.1257, offset2d_loss:0.2801, offset3d_loss:0.2147, seg_loss:0.2212, size2d_loss:0.6764, size3d_loss:0.0903,
+2023-01-23 00:38:56,878   INFO  ------ TRAIN EPOCH 041 ------
+2023-01-23 00:38:56,878   INFO  Learning Rate: 0.001000
+2023-01-23 00:38:57,558   INFO  Weights:  depth_:0.9824, heading_:0.9824, offset2d_:1.0000, offset3d_:0.9824, seg_:1.0000, size2d_:1.0000, size3d_:0.9824,
+2023-01-23 00:41:51,728   INFO  BATCH[0200/0232] affinity_kd:5.5829, backbone_loss_l1:0.1710, depth_loss:1.8537, head_kd:4.0053, heading_loss:0.1198, offset2d_loss:0.2720, offset3d_loss:0.2178, seg_loss:0.2064, size2d_loss:0.6258, size3d_loss:0.0916,
+2023-01-23 00:42:16,688   INFO  ------ TRAIN EPOCH 042 ------
+2023-01-23 00:42:16,688   INFO  Learning Rate: 0.001000
+2023-01-23 00:42:17,336   INFO  Weights:  depth_:0.9801, heading_:0.9801, offset2d_:1.0000, offset3d_:0.9801, seg_:1.0000, size2d_:1.0000, size3d_:0.9801,
+2023-01-23 00:45:09,809   INFO  BATCH[0200/0232] affinity_kd:5.7015, backbone_loss_l1:0.1737, depth_loss:1.9049, head_kd:4.1652, heading_loss:0.1273, offset2d_loss:0.2824, offset3d_loss:0.2148, seg_loss:0.2245, size2d_loss:0.6941, size3d_loss:0.0916,
+2023-01-23 00:45:35,526   INFO  ------ TRAIN EPOCH 043 ------
+2023-01-23 00:45:35,527   INFO  Learning Rate: 0.001000
+2023-01-23 00:45:36,147   INFO  Weights:  depth_:0.9703, heading_:0.9703, offset2d_:1.0000, offset3d_:0.9703, seg_:1.0000, size2d_:1.0000, size3d_:0.9703,
+2023-01-23 00:48:30,730   INFO  BATCH[0200/0232] affinity_kd:5.5999, backbone_loss_l1:0.1715, depth_loss:1.7831, head_kd:3.9974, heading_loss:0.1246, offset2d_loss:0.2761, offset3d_loss:0.2152, seg_loss:0.2043, size2d_loss:0.6764, size3d_loss:0.0904,
+2023-01-23 00:48:56,533   INFO  ------ TRAIN EPOCH 044 ------
+2023-01-23 00:48:56,534   INFO  Learning Rate: 0.001000
+2023-01-23 00:48:57,231   INFO  Weights:  depth_:0.9828, heading_:0.9837, offset2d_:1.0000, offset3d_:0.9837, seg_:1.0000, size2d_:1.0000, size3d_:0.9837,
+2023-01-23 00:51:50,957   INFO  BATCH[0200/0232] affinity_kd:5.5699, backbone_loss_l1:0.1689, depth_loss:1.9471, head_kd:4.0821, heading_loss:0.1118, offset2d_loss:0.2724, offset3d_loss:0.2163, seg_loss:0.2040, size2d_loss:0.6469, size3d_loss:0.0912,
+2023-01-23 00:52:16,744   INFO  ------ TRAIN EPOCH 045 ------
+2023-01-23 00:52:16,744   INFO  Learning Rate: 0.001000
+2023-01-23 00:52:17,387   INFO  Weights:  depth_:0.8580, heading_:0.9910, offset2d_:1.0000, offset3d_:0.9910, seg_:1.0000, size2d_:1.0000, size3d_:0.9910,
+2023-01-23 00:55:11,394   INFO  BATCH[0200/0232] affinity_kd:5.5703, backbone_loss_l1:0.1687, depth_loss:1.9601, head_kd:4.1321, heading_loss:0.1134, offset2d_loss:0.2692, offset3d_loss:0.2183, seg_loss:0.2061, size2d_loss:0.6251, size3d_loss:0.0904,
+2023-01-23 00:55:36,896   INFO  ------ TRAIN EPOCH 046 ------
+2023-01-23 00:55:36,897   INFO  Learning Rate: 0.001000
+2023-01-23 00:55:37,536   INFO  Weights:  depth_:0.9262, heading_:0.9852, offset2d_:1.0000, offset3d_:0.9852, seg_:1.0000, size2d_:1.0000, size3d_:0.9852,
+2023-01-23 00:58:31,557   INFO  BATCH[0200/0232] affinity_kd:5.5464, backbone_loss_l1:0.1688, depth_loss:1.7166, head_kd:3.9502, heading_loss:0.1279, offset2d_loss:0.2645, offset3d_loss:0.2162, seg_loss:0.2022, size2d_loss:0.6316, size3d_loss:0.0895,
+2023-01-23 00:58:55,559   INFO  ------ TRAIN EPOCH 047 ------
+2023-01-23 00:58:55,560   INFO  Learning Rate: 0.001000
+2023-01-23 00:58:56,198   INFO  Weights:  depth_:0.9753, heading_:0.9753, offset2d_:1.0000, offset3d_:0.9753, seg_:1.0000, size2d_:1.0000, size3d_:0.9753,
+2023-01-23 01:01:50,480   INFO  BATCH[0200/0232] affinity_kd:5.5590, backbone_loss_l1:0.1673, depth_loss:1.7699, head_kd:4.0404, heading_loss:0.1166, offset2d_loss:0.2717, offset3d_loss:0.2164, seg_loss:0.2082, size2d_loss:0.6443, size3d_loss:0.0891,
+2023-01-23 01:02:16,456   INFO  ------ TRAIN EPOCH 048 ------
+2023-01-23 01:02:16,457   INFO  Learning Rate: 0.001000
+2023-01-23 01:02:17,121   INFO  Weights:  depth_:0.9694, heading_:0.9694, offset2d_:1.0000, offset3d_:0.9694, seg_:1.0000, size2d_:1.0000, size3d_:0.9694,
+2023-01-23 01:05:10,833   INFO  BATCH[0200/0232] affinity_kd:5.5317, backbone_loss_l1:0.1649, depth_loss:1.7570, head_kd:3.9426, heading_loss:0.1166, offset2d_loss:0.2664, offset3d_loss:0.2155, seg_loss:0.2030, size2d_loss:0.6265, size3d_loss:0.0891,
+2023-01-23 01:05:36,574   INFO  ------ TRAIN EPOCH 049 ------
+2023-01-23 01:05:36,575   INFO  Learning Rate: 0.001000
+2023-01-23 01:05:37,247   INFO  Weights:  depth_:0.9892, heading_:0.9892, offset2d_:1.0000, offset3d_:0.9892, seg_:1.0000, size2d_:1.0000, size3d_:0.9892,
+2023-01-23 01:08:30,663   INFO  BATCH[0200/0232] affinity_kd:5.5326, backbone_loss_l1:0.1670, depth_loss:1.7887, head_kd:3.9526, heading_loss:0.1220, offset2d_loss:0.2692, offset3d_loss:0.2161, seg_loss:0.1954, size2d_loss:0.6350, size3d_loss:0.0882,
+2023-01-23 01:08:56,377   INFO  ------ TRAIN EPOCH 050 ------
+2023-01-23 01:08:56,378   INFO  Learning Rate: 0.001000
+2023-01-23 01:08:57,073   INFO  Weights:  depth_:0.9880, heading_:0.9880, offset2d_:1.0000, offset3d_:0.9880, seg_:1.0000, size2d_:1.0000, size3d_:0.9880,
+2023-01-23 01:11:50,710   INFO  BATCH[0200/0232] affinity_kd:5.5051, backbone_loss_l1:0.1670, depth_loss:1.8470, head_kd:3.9766, heading_loss:0.1143, offset2d_loss:0.2652, offset3d_loss:0.2176, seg_loss:0.2014, size2d_loss:0.6412, size3d_loss:0.0895,
+2023-01-23 01:12:16,353   INFO  ------ TRAIN EPOCH 051 ------
+2023-01-23 01:12:16,354   INFO  Learning Rate: 0.001000
+2023-01-23 01:12:17,055   INFO  Weights:  depth_:0.9846, heading_:0.9846, offset2d_:1.0000, offset3d_:0.9846, seg_:1.0000, size2d_:1.0000, size3d_:0.9846,
+2023-01-23 01:15:12,118   INFO  BATCH[0200/0232] affinity_kd:5.4917, backbone_loss_l1:0.1642, depth_loss:1.7482, head_kd:3.9077, heading_loss:0.1171, offset2d_loss:0.2747, offset3d_loss:0.2140, seg_loss:0.1980, size2d_loss:0.6644, size3d_loss:0.0892,
+2023-01-23 01:15:35,981   INFO  ------ TRAIN EPOCH 052 ------
+2023-01-23 01:15:35,982   INFO  Learning Rate: 0.001000
+2023-01-23 01:15:36,680   INFO  Weights:  depth_:0.9836, heading_:0.9836, offset2d_:1.0000, offset3d_:0.9836, seg_:1.0000, size2d_:1.0000, size3d_:0.9836,
+2023-01-23 01:18:32,044   INFO  BATCH[0200/0232] affinity_kd:5.5208, backbone_loss_l1:0.1667, depth_loss:1.7738, head_kd:3.9807, heading_loss:0.1182, offset2d_loss:0.2628, offset3d_loss:0.2138, seg_loss:0.2139, size2d_loss:0.6267, size3d_loss:0.0896,
+2023-01-23 01:18:56,111   INFO  ------ TRAIN EPOCH 053 ------
+2023-01-23 01:18:56,112   INFO  Learning Rate: 0.001000
+2023-01-23 01:18:56,821   INFO  Weights:  depth_:0.9248, heading_:0.9832, offset2d_:1.0000, offset3d_:0.9832, seg_:1.0000, size2d_:1.0000, size3d_:0.9832,
+2023-01-23 01:21:50,309   INFO  BATCH[0200/0232] affinity_kd:5.4952, backbone_loss_l1:0.1633, depth_loss:1.7666, head_kd:3.9291, heading_loss:0.1120, offset2d_loss:0.2616, offset3d_loss:0.2169, seg_loss:0.1961, size2d_loss:0.6355, size3d_loss:0.0889,
+2023-01-23 01:22:16,543   INFO  ------ TRAIN EPOCH 054 ------
+2023-01-23 01:22:16,544   INFO  Learning Rate: 0.001000
+2023-01-23 01:22:17,175   INFO  Weights:  depth_:0.9392, heading_:0.9934, offset2d_:1.0000, offset3d_:0.9934, seg_:1.0000, size2d_:1.0000, size3d_:0.9934,
+2023-01-23 01:25:10,754   INFO  BATCH[0200/0232] affinity_kd:5.4989, backbone_loss_l1:0.1645, depth_loss:1.7616, head_kd:4.0383, heading_loss:0.1174, offset2d_loss:0.2789, offset3d_loss:0.2154, seg_loss:0.2056, size2d_loss:0.6613, size3d_loss:0.0884,
+2023-01-23 01:25:36,531   INFO  ------ TRAIN EPOCH 055 ------
+2023-01-23 01:25:36,532   INFO  Learning Rate: 0.001000
+2023-01-23 01:25:37,154   INFO  Weights:  depth_:0.9954, heading_:0.9954, offset2d_:1.0000, offset3d_:0.9954, seg_:1.0000, size2d_:1.0000, size3d_:0.9954,
+2023-01-23 01:28:30,898   INFO  BATCH[0200/0232] affinity_kd:5.4463, backbone_loss_l1:0.1648, depth_loss:1.7942, head_kd:3.9260, heading_loss:0.1116, offset2d_loss:0.2706, offset3d_loss:0.2151, seg_loss:0.1992, size2d_loss:0.6554, size3d_loss:0.0902,
+2023-01-23 01:28:56,922   INFO  ------ TRAIN EPOCH 056 ------
+2023-01-23 01:28:56,923   INFO  Learning Rate: 0.001000
+2023-01-23 01:28:57,546   INFO  Weights:  depth_:0.9868, heading_:0.9974, offset2d_:1.0000, offset3d_:0.9974, seg_:1.0000, size2d_:1.0000, size3d_:0.9974,
+2023-01-23 01:31:50,432   INFO  BATCH[0200/0232] affinity_kd:5.4843, backbone_loss_l1:0.1624, depth_loss:1.8646, head_kd:3.9908, heading_loss:0.1201, offset2d_loss:0.2646, offset3d_loss:0.2159, seg_loss:0.2004, size2d_loss:0.6409, size3d_loss:0.0880,
+2023-01-23 01:32:16,668   INFO  ------ TRAIN EPOCH 057 ------
+2023-01-23 01:32:16,669   INFO  Learning Rate: 0.001000
+2023-01-23 01:32:17,386   INFO  Weights:  depth_:0.8924, heading_:0.9894, offset2d_:1.0000, offset3d_:0.9894, seg_:1.0000, size2d_:1.0000, size3d_:0.9894,
+2023-01-23 01:35:13,444   INFO  BATCH[0200/0232] affinity_kd:5.4605, backbone_loss_l1:0.1643, depth_loss:1.7900, head_kd:4.0608, heading_loss:0.1187, offset2d_loss:0.2800, offset3d_loss:0.2149, seg_loss:0.2031, size2d_loss:0.6751, size3d_loss:0.0890,
+2023-01-23 01:35:37,689   INFO  ------ TRAIN EPOCH 058 ------
+2023-01-23 01:35:37,690   INFO  Learning Rate: 0.001000
+2023-01-23 01:35:38,374   INFO  Weights:  depth_:0.8852, heading_:0.9857, offset2d_:1.0000, offset3d_:0.9857, seg_:1.0000, size2d_:1.0000, size3d_:0.9857,
+2023-01-23 01:38:33,296   INFO  BATCH[0200/0232] affinity_kd:5.4639, backbone_loss_l1:0.1624, depth_loss:1.8059, head_kd:4.0593, heading_loss:0.1171, offset2d_loss:0.2737, offset3d_loss:0.2167, seg_loss:0.2065, size2d_loss:0.7121, size3d_loss:0.0889,
+2023-01-23 01:38:59,180   INFO  ------ TRAIN EPOCH 059 ------
+2023-01-23 01:38:59,181   INFO  Learning Rate: 0.001000
+2023-01-23 01:38:59,862   INFO  Weights:  depth_:0.9388, heading_:0.9911, offset2d_:1.0000, offset3d_:0.9911, seg_:1.0000, size2d_:1.0000, size3d_:0.9911,
+2023-01-23 01:41:53,627   INFO  BATCH[0200/0232] affinity_kd:5.4507, backbone_loss_l1:0.1617, depth_loss:1.7268, head_kd:3.8633, heading_loss:0.1114, offset2d_loss:0.2724, offset3d_loss:0.2162, seg_loss:0.1987, size2d_loss:0.6286, size3d_loss:0.0891,
+2023-01-23 01:42:19,568   INFO  ------ TRAIN EPOCH 060 ------
+2023-01-23 01:42:19,569   INFO  Learning Rate: 0.001000
+2023-01-23 01:42:20,297   INFO  Weights:  depth_:0.8733, heading_:0.9953, offset2d_:1.0000, offset3d_:0.9953, seg_:1.0000, size2d_:1.0000, size3d_:0.9953,
+2023-01-23 01:45:11,790   INFO  BATCH[0200/0232] affinity_kd:5.4239, backbone_loss_l1:0.1613, depth_loss:1.7597, head_kd:3.9220, heading_loss:0.1235, offset2d_loss:0.2643, offset3d_loss:0.2158, seg_loss:0.2002, size2d_loss:0.6408, size3d_loss:0.0889,
+2023-01-23 01:45:37,819   INFO  ------ TRAIN EPOCH 061 ------
+2023-01-23 01:45:37,820   INFO  Learning Rate: 0.001000
+2023-01-23 01:45:38,536   INFO  Weights:  depth_:0.9419, heading_:0.9985, offset2d_:1.0000, offset3d_:0.9985, seg_:1.0000, size2d_:1.0000, size3d_:0.9985,
+2023-01-23 01:48:30,991   INFO  BATCH[0200/0232] affinity_kd:5.3861, backbone_loss_l1:0.1558, depth_loss:1.6790, head_kd:3.8994, heading_loss:0.1063, offset2d_loss:0.2700, offset3d_loss:0.2156, seg_loss:0.1891, size2d_loss:0.6476, size3d_loss:0.0874,
+2023-01-23 01:48:56,963   INFO  ------ TRAIN EPOCH 062 ------
+2023-01-23 01:48:56,964   INFO  Learning Rate: 0.001000
+2023-01-23 01:48:57,647   INFO  Weights:  depth_:0.9944, heading_:0.9944, offset2d_:1.0000, offset3d_:0.9944, seg_:1.0000, size2d_:1.0000, size3d_:0.9944,
+2023-01-23 01:51:50,184   INFO  BATCH[0200/0232] affinity_kd:5.3528, backbone_loss_l1:0.1579, depth_loss:1.6950, head_kd:3.8404, heading_loss:0.1082, offset2d_loss:0.2633, offset3d_loss:0.2131, seg_loss:0.1957, size2d_loss:0.6038, size3d_loss:0.0869,
+2023-01-23 01:52:15,841   INFO  ------ TRAIN EPOCH 063 ------
+2023-01-23 01:52:15,842   INFO  Learning Rate: 0.001000
+2023-01-23 01:52:16,500   INFO  Weights:  depth_:0.9857, heading_:0.9857, offset2d_:1.0000, offset3d_:0.9857, seg_:1.0000, size2d_:1.0000, size3d_:0.9857,
+2023-01-23 01:55:11,353   INFO  BATCH[0200/0232] affinity_kd:5.3667, backbone_loss_l1:0.1601, depth_loss:1.6185, head_kd:3.7919, heading_loss:0.1090, offset2d_loss:0.2624, offset3d_loss:0.2138, seg_loss:0.1958, size2d_loss:0.6189, size3d_loss:0.0877,
+2023-01-23 01:55:35,105   INFO  ------ TRAIN EPOCH 064 ------
+2023-01-23 01:55:35,106   INFO  Learning Rate: 0.001000
+2023-01-23 01:55:35,778   INFO  Weights:  depth_:0.9746, heading_:0.9746, offset2d_:1.0000, offset3d_:0.9746, seg_:1.0000, size2d_:1.0000, size3d_:0.9746,
+2023-01-23 01:58:30,453   INFO  BATCH[0200/0232] affinity_kd:5.4148, backbone_loss_l1:0.1599, depth_loss:1.6575, head_kd:3.8202, heading_loss:0.1115, offset2d_loss:0.2659, offset3d_loss:0.2146, seg_loss:0.1968, size2d_loss:0.6213, size3d_loss:0.0877,
+2023-01-23 01:58:56,753   INFO  ------ TRAIN EPOCH 065 ------
+2023-01-23 01:58:56,754   INFO  Learning Rate: 0.001000
+2023-01-23 01:58:57,364   INFO  Weights:  depth_:0.9756, heading_:0.9756, offset2d_:1.0000, offset3d_:0.9756, seg_:1.0000, size2d_:1.0000, size3d_:0.9756,
+2023-01-23 02:01:51,239   INFO  BATCH[0200/0232] affinity_kd:5.3692, backbone_loss_l1:0.1614, depth_loss:1.7074, head_kd:3.8717, heading_loss:0.1086, offset2d_loss:0.2592, offset3d_loss:0.2154, seg_loss:0.1988, size2d_loss:0.6231, size3d_loss:0.0873,
+2023-01-23 02:02:17,290   INFO  ------ TRAIN EPOCH 066 ------
+2023-01-23 02:02:17,291   INFO  Learning Rate: 0.001000
+2023-01-23 02:02:17,943   INFO  Weights:  depth_:0.9937, heading_:0.9937, offset2d_:1.0000, offset3d_:0.9937, seg_:1.0000, size2d_:1.0000, size3d_:0.9937,
+2023-01-23 02:05:04,800   INFO  BATCH[0200/0232] affinity_kd:5.3484, backbone_loss_l1:0.1587, depth_loss:1.6514, head_kd:3.7824, heading_loss:0.1146, offset2d_loss:0.2616, offset3d_loss:0.2141, seg_loss:0.1996, size2d_loss:0.6056, size3d_loss:0.0876,
+2023-01-23 02:05:24,819   INFO  ------ TRAIN EPOCH 067 ------
+2023-01-23 02:05:24,820   INFO  Learning Rate: 0.001000
+2023-01-23 02:05:25,407   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 02:08:18,914   INFO  BATCH[0200/0232] affinity_kd:5.3495, backbone_loss_l1:0.1564, depth_loss:1.5917, head_kd:3.7698, heading_loss:0.1034, offset2d_loss:0.2626, offset3d_loss:0.2126, seg_loss:0.1851, size2d_loss:0.6269, size3d_loss:0.0863,
+2023-01-23 02:08:44,021   INFO  ------ TRAIN EPOCH 068 ------
+2023-01-23 02:08:44,022   INFO  Learning Rate: 0.001000
+2023-01-23 02:08:44,629   INFO  Weights:  depth_:0.9909, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 02:11:38,780   INFO  BATCH[0200/0232] affinity_kd:5.3255, backbone_loss_l1:0.1575, depth_loss:1.7217, head_kd:3.8538, heading_loss:0.1076, offset2d_loss:0.2627, offset3d_loss:0.2150, seg_loss:0.1945, size2d_loss:0.6150, size3d_loss:0.0875,
+2023-01-23 02:12:02,472   INFO  ------ TRAIN EPOCH 069 ------
+2023-01-23 02:12:02,473   INFO  Learning Rate: 0.001000
+2023-01-23 02:12:03,121   INFO  Weights:  depth_:0.9905, heading_:0.9905, offset2d_:1.0000, offset3d_:0.9905, seg_:1.0000, size2d_:1.0000, size3d_:0.9905,
+2023-01-23 02:14:55,819   INFO  BATCH[0200/0232] affinity_kd:5.3855, backbone_loss_l1:0.1586, depth_loss:1.5605, head_kd:3.7391, heading_loss:0.1061, offset2d_loss:0.2650, offset3d_loss:0.2141, seg_loss:0.1981, size2d_loss:0.6502, size3d_loss:0.0877,
+2023-01-23 02:15:21,627   INFO  ------ TRAIN EPOCH 070 ------
+2023-01-23 02:15:21,628   INFO  Learning Rate: 0.001000
+2023-01-23 02:15:22,278   INFO  Weights:  depth_:0.9850, heading_:0.9850, offset2d_:1.0000, offset3d_:0.9850, seg_:1.0000, size2d_:1.0000, size3d_:0.9850,
+2023-01-23 02:18:16,227   INFO  BATCH[0200/0232] affinity_kd:5.3039, backbone_loss_l1:0.1540, depth_loss:1.6185, head_kd:3.7322, heading_loss:0.1030, offset2d_loss:0.2599, offset3d_loss:0.2124, seg_loss:0.1862, size2d_loss:0.5974, size3d_loss:0.0861,
+2023-01-23 02:18:42,101   INFO  ------ TRAIN EPOCH 071 ------
+2023-01-23 02:18:42,101   INFO  Learning Rate: 0.001000
+2023-01-23 02:18:42,762   INFO  Weights:  depth_:0.9441, heading_:0.9958, offset2d_:1.0000, offset3d_:0.9958, seg_:1.0000, size2d_:1.0000, size3d_:0.9958,
+2023-01-23 02:21:32,013   INFO  BATCH[0200/0232] affinity_kd:5.3643, backbone_loss_l1:0.1573, depth_loss:1.6709, head_kd:3.8795, heading_loss:0.1044, offset2d_loss:0.2647, offset3d_loss:0.2152, seg_loss:0.2063, size2d_loss:0.6243, size3d_loss:0.0878,
+2023-01-23 02:21:52,832   INFO  ------ TRAIN EPOCH 072 ------
+2023-01-23 02:21:52,833   INFO  Learning Rate: 0.001000
+2023-01-23 02:21:53,492   INFO  Weights:  depth_:0.9863, heading_:0.9942, offset2d_:1.0000, offset3d_:0.9942, seg_:1.0000, size2d_:1.0000, size3d_:0.9942,
+2023-01-23 02:24:46,628   INFO  BATCH[0200/0232] affinity_kd:5.3231, backbone_loss_l1:0.1553, depth_loss:1.9954, head_kd:4.0839, heading_loss:0.1096, offset2d_loss:0.2624, offset3d_loss:0.2126, seg_loss:0.1895, size2d_loss:0.6282, size3d_loss:0.0862,
+2023-01-23 02:25:10,489   INFO  ------ TRAIN EPOCH 073 ------
+2023-01-23 02:25:10,489   INFO  Learning Rate: 0.001000
+2023-01-23 02:25:11,191   INFO  Weights:  depth_:0.9967, heading_:0.9967, offset2d_:1.0000, offset3d_:0.9967, seg_:1.0000, size2d_:1.0000, size3d_:0.9967,
+2023-01-23 02:28:04,976   INFO  BATCH[0200/0232] affinity_kd:5.2773, backbone_loss_l1:0.1550, depth_loss:1.6214, head_kd:3.7927, heading_loss:0.1018, offset2d_loss:0.2562, offset3d_loss:0.2135, seg_loss:0.1874, size2d_loss:0.5855, size3d_loss:0.0864,
+2023-01-23 02:28:29,869   INFO  ------ TRAIN EPOCH 074 ------
+2023-01-23 02:28:29,870   INFO  Learning Rate: 0.001000
+2023-01-23 02:28:30,534   INFO  Weights:  depth_:0.9974, heading_:0.9974, offset2d_:1.0000, offset3d_:0.9974, seg_:1.0000, size2d_:1.0000, size3d_:0.9974,
+2023-01-23 02:31:22,489   INFO  BATCH[0200/0232] affinity_kd:5.2907, backbone_loss_l1:0.1550, depth_loss:1.5684, head_kd:3.7295, heading_loss:0.1049, offset2d_loss:0.2552, offset3d_loss:0.2140, seg_loss:0.1881, size2d_loss:0.5964, size3d_loss:0.0854,
+2023-01-23 02:31:48,315   INFO  ------ TRAIN EPOCH 075 ------
+2023-01-23 02:31:48,316   INFO  Learning Rate: 0.001000
+2023-01-23 02:31:49,024   INFO  Weights:  depth_:0.9931, heading_:0.9931, offset2d_:1.0000, offset3d_:0.9931, seg_:1.0000, size2d_:1.0000, size3d_:0.9931,
+2023-01-23 02:34:42,591   INFO  BATCH[0200/0232] affinity_kd:5.3280, backbone_loss_l1:0.1550, depth_loss:1.7077, head_kd:3.8418, heading_loss:0.1065, offset2d_loss:0.2635, offset3d_loss:0.2130, seg_loss:0.1885, size2d_loss:0.6154, size3d_loss:0.0864,
+2023-01-23 02:35:08,567   INFO  ------ TRAIN EPOCH 076 ------
+2023-01-23 02:35:08,568   INFO  Learning Rate: 0.001000
+2023-01-23 02:35:09,252   INFO  Weights:  depth_:0.9922, heading_:0.9922, offset2d_:1.0000, offset3d_:0.9922, seg_:1.0000, size2d_:1.0000, size3d_:0.9922,
+2023-01-23 02:37:56,865   INFO  BATCH[0200/0232] affinity_kd:5.2963, backbone_loss_l1:0.1542, depth_loss:1.5574, head_kd:3.7202, heading_loss:0.1061, offset2d_loss:0.2525, offset3d_loss:0.2145, seg_loss:0.1830, size2d_loss:0.5873, size3d_loss:0.0863,
+2023-01-23 02:38:16,274   INFO  ------ TRAIN EPOCH 077 ------
+2023-01-23 02:38:16,275   INFO  Learning Rate: 0.001000
+2023-01-23 02:38:16,981   INFO  Weights:  depth_:0.9920, heading_:0.9920, offset2d_:1.0000, offset3d_:0.9920, seg_:1.0000, size2d_:1.0000, size3d_:0.9920,
+2023-01-23 02:41:11,809   INFO  BATCH[0200/0232] affinity_kd:5.2797, backbone_loss_l1:0.1557, depth_loss:1.8050, head_kd:3.9081, heading_loss:0.1216, offset2d_loss:0.2588, offset3d_loss:0.2171, seg_loss:0.1960, size2d_loss:0.6053, size3d_loss:0.0862,
+2023-01-23 02:41:36,099   INFO  ------ TRAIN EPOCH 078 ------
+2023-01-23 02:41:36,099   INFO  Learning Rate: 0.001000
+2023-01-23 02:41:36,796   INFO  Weights:  depth_:0.9990, heading_:0.9990, offset2d_:1.0000, offset3d_:0.9990, seg_:1.0000, size2d_:1.0000, size3d_:0.9990,
+2023-01-23 02:44:29,917   INFO  BATCH[0200/0232] affinity_kd:5.2617, backbone_loss_l1:0.1530, depth_loss:1.4950, head_kd:3.6939, heading_loss:0.1098, offset2d_loss:0.2564, offset3d_loss:0.2140, seg_loss:0.1889, size2d_loss:0.6031, size3d_loss:0.0859,
+2023-01-23 02:44:55,704   INFO  ------ TRAIN EPOCH 079 ------
+2023-01-23 02:44:55,705   INFO  Learning Rate: 0.001000
+2023-01-23 02:44:56,351   INFO  Weights:  depth_:0.9873, heading_:0.9995, offset2d_:1.0000, offset3d_:0.9995, seg_:1.0000, size2d_:1.0000, size3d_:0.9995,
+2023-01-23 02:47:48,629   INFO  BATCH[0200/0232] affinity_kd:5.2711, backbone_loss_l1:0.1520, depth_loss:1.7475, head_kd:3.8980, heading_loss:0.1013, offset2d_loss:0.2612, offset3d_loss:0.2144, seg_loss:0.1928, size2d_loss:0.6262, size3d_loss:0.0854,
+2023-01-23 02:48:14,672   INFO  ------ TRAIN EPOCH 080 ------
+2023-01-23 02:48:14,673   INFO  Learning Rate: 0.001000
+2023-01-23 02:48:15,324   INFO  Weights:  depth_:0.9851, heading_:0.9942, offset2d_:1.0000, offset3d_:0.9942, seg_:1.0000, size2d_:1.0000, size3d_:0.9942,
+2023-01-23 02:51:08,185   INFO  BATCH[0200/0232] affinity_kd:5.2584, backbone_loss_l1:0.1537, depth_loss:1.6015, head_kd:3.7281, heading_loss:0.1059, offset2d_loss:0.2554, offset3d_loss:0.2149, seg_loss:0.1872, size2d_loss:0.5930, size3d_loss:0.0851,
+2023-01-23 02:51:34,032   INFO  ------ TRAIN EPOCH 081 ------
+2023-01-23 02:51:34,032   INFO  Learning Rate: 0.001000
+2023-01-23 02:51:34,717   INFO  Weights:  depth_:0.9556, heading_:0.9919, offset2d_:1.0000, offset3d_:0.9919, seg_:1.0000, size2d_:1.0000, size3d_:0.9919,
+2023-01-23 02:54:19,017   INFO  BATCH[0200/0232] affinity_kd:5.2473, backbone_loss_l1:0.1524, depth_loss:1.5693, head_kd:3.7047, heading_loss:0.0919, offset2d_loss:0.2577, offset3d_loss:0.2132, seg_loss:0.1846, size2d_loss:0.5898, size3d_loss:0.0854,
+2023-01-23 02:54:42,215   INFO  ------ TRAIN EPOCH 082 ------
+2023-01-23 02:54:42,216   INFO  Learning Rate: 0.001000
+2023-01-23 02:54:42,870   INFO  Weights:  depth_:0.9783, heading_:0.9930, offset2d_:1.0000, offset3d_:0.9930, seg_:1.0000, size2d_:1.0000, size3d_:0.9930,
+2023-01-23 02:57:35,457   INFO  BATCH[0200/0232] affinity_kd:5.2329, backbone_loss_l1:0.1519, depth_loss:1.6268, head_kd:3.8373, heading_loss:0.1048, offset2d_loss:0.2566, offset3d_loss:0.2154, seg_loss:0.1889, size2d_loss:0.6090, size3d_loss:0.0852,
+2023-01-23 02:58:01,630   INFO  ------ TRAIN EPOCH 083 ------
+2023-01-23 02:58:01,630   INFO  Learning Rate: 0.001000
+2023-01-23 02:58:02,284   INFO  Weights:  depth_:0.9945, heading_:0.9945, offset2d_:1.0000, offset3d_:0.9945, seg_:1.0000, size2d_:1.0000, size3d_:0.9945,
+2023-01-23 03:00:54,338   INFO  BATCH[0200/0232] affinity_kd:5.2708, backbone_loss_l1:0.1530, depth_loss:1.7013, head_kd:3.8808, heading_loss:0.1075, offset2d_loss:0.2613, offset3d_loss:0.2129, seg_loss:0.1809, size2d_loss:0.6261, size3d_loss:0.0854,
+2023-01-23 03:01:20,441   INFO  ------ TRAIN EPOCH 084 ------
+2023-01-23 03:01:20,442   INFO  Learning Rate: 0.001000
+2023-01-23 03:01:21,223   INFO  Weights:  depth_:0.9965, heading_:0.9965, offset2d_:1.0000, offset3d_:0.9965, seg_:1.0000, size2d_:1.0000, size3d_:0.9965,
+2023-01-23 03:04:13,170   INFO  BATCH[0200/0232] affinity_kd:5.2305, backbone_loss_l1:0.1505, depth_loss:1.6895, head_kd:3.8040, heading_loss:0.0991, offset2d_loss:0.2571, offset3d_loss:0.2139, seg_loss:0.1841, size2d_loss:0.6042, size3d_loss:0.0848,
+2023-01-23 03:04:38,915   INFO  ------ TRAIN EPOCH 085 ------
+2023-01-23 03:04:38,916   INFO  Learning Rate: 0.001000
+2023-01-23 03:04:39,618   INFO  Weights:  depth_:0.9745, heading_:0.9989, offset2d_:1.0000, offset3d_:0.9989, seg_:1.0000, size2d_:1.0000, size3d_:0.9989,
+2023-01-23 03:07:33,062   INFO  BATCH[0200/0232] affinity_kd:5.2346, backbone_loss_l1:0.1501, depth_loss:1.6288, head_kd:3.7614, heading_loss:0.1002, offset2d_loss:0.2531, offset3d_loss:0.2148, seg_loss:0.1886, size2d_loss:0.6047, size3d_loss:0.0850,
+2023-01-23 03:07:58,926   INFO  ------ TRAIN EPOCH 086 ------
+2023-01-23 03:07:58,927   INFO  Learning Rate: 0.001000
+2023-01-23 03:07:59,641   INFO  Weights:  depth_:0.9216, heading_:0.9990, offset2d_:1.0000, offset3d_:0.9990, seg_:1.0000, size2d_:1.0000, size3d_:0.9990,
+2023-01-23 03:10:42,350   INFO  BATCH[0200/0232] affinity_kd:5.2719, backbone_loss_l1:0.1506, depth_loss:1.5171, head_kd:3.7982, heading_loss:0.1041, offset2d_loss:0.2586, offset3d_loss:0.2146, seg_loss:0.1946, size2d_loss:0.6237, size3d_loss:0.0861,
+2023-01-23 03:11:08,229   INFO  ------ TRAIN EPOCH 087 ------
+2023-01-23 03:11:08,229   INFO  Learning Rate: 0.001000
+2023-01-23 03:11:08,972   INFO  Weights:  depth_:0.9719, heading_:0.9972, offset2d_:1.0000, offset3d_:0.9972, seg_:1.0000, size2d_:1.0000, size3d_:0.9972,
+2023-01-23 03:14:02,265   INFO  BATCH[0200/0232] affinity_kd:5.2103, backbone_loss_l1:0.1480, depth_loss:1.5248, head_kd:3.7506, heading_loss:0.0981, offset2d_loss:0.2599, offset3d_loss:0.2131, seg_loss:0.1813, size2d_loss:0.5875, size3d_loss:0.0840,
+2023-01-23 03:14:28,065   INFO  ------ TRAIN EPOCH 088 ------
+2023-01-23 03:14:28,066   INFO  Learning Rate: 0.001000
+2023-01-23 03:14:28,813   INFO  Weights:  depth_:0.9981, heading_:0.9981, offset2d_:1.0000, offset3d_:0.9981, seg_:1.0000, size2d_:1.0000, size3d_:0.9981,
+2023-01-23 03:17:22,419   INFO  BATCH[0200/0232] affinity_kd:5.2200, backbone_loss_l1:0.1482, depth_loss:1.5108, head_kd:3.6442, heading_loss:0.0968, offset2d_loss:0.2598, offset3d_loss:0.2128, seg_loss:0.1857, size2d_loss:0.6049, size3d_loss:0.0850,
+2023-01-23 03:17:48,385   INFO  ------ TRAIN EPOCH 089 ------
+2023-01-23 03:17:48,386   INFO  Learning Rate: 0.001000
+2023-01-23 03:17:49,003   INFO  Weights:  depth_:0.9968, heading_:0.9968, offset2d_:1.0000, offset3d_:0.9968, seg_:1.0000, size2d_:1.0000, size3d_:0.9968,
+2023-01-23 03:20:41,841   INFO  BATCH[0200/0232] affinity_kd:5.1665, backbone_loss_l1:0.1496, depth_loss:1.6178, head_kd:3.7561, heading_loss:0.1021, offset2d_loss:0.2518, offset3d_loss:0.2136, seg_loss:0.1760, size2d_loss:0.6115, size3d_loss:0.0850,
+2023-01-23 03:21:07,779   INFO  ------ TRAIN EPOCH 090 ------
+2023-01-23 03:21:07,780   INFO  Learning Rate: 0.001000
+2023-01-23 03:21:08,363   INFO  Weights:  depth_:0.9950, heading_:0.9950, offset2d_:1.0000, offset3d_:0.9950, seg_:1.0000, size2d_:1.0000, size3d_:0.9950,
+2023-01-23 03:24:03,047   INFO  BATCH[0200/0232] affinity_kd:5.1995, backbone_loss_l1:0.1471, depth_loss:1.5446, head_kd:3.7037, heading_loss:0.1035, offset2d_loss:0.2556, offset3d_loss:0.2139, seg_loss:0.1845, size2d_loss:0.6059, size3d_loss:0.0840,
+2023-01-23 03:24:27,346   INFO  ------ EVAL EPOCH 090 ------
+2023-01-23 03:26:27,737   INFO  ------------------evalute model: EPOCH_90--------------------
+2023-01-23 03:26:27,737   INFO  ********************Car********************
+2023-01-23 03:26:40,813   INFO  bbox@0.70 [96.76256194789559, 92.84809167704722, 85.50251777196743]
+2023-01-23 03:26:40,813   INFO  bev@0.70  [29.84023302477147, 21.125699112165787, 18.817679940875003]
+2023-01-23 03:26:40,813   INFO  3d@0.70   [22.896402316632354, 15.98619027281987, 13.843818907235624]
+2023-01-23 03:26:40,813   INFO  aos       [96.01864580615673, 91.45036946690466, 83.35245178700428]
+2023-01-23 03:26:40,813   INFO  bev@0.50  [65.54876355229813, 49.242449244843634, 44.48053403200114]
+2023-01-23 03:26:40,813   INFO  3d@0.50   [60.1405916570499, 44.3970035529541, 39.67707616956696]
+2023-01-23 03:26:40,813   INFO  bev@0.30  [86.15436442540997, 69.08638128048314, 63.74230639492334]
+2023-01-23 03:26:40,813   INFO  3d@0.30   [83.8185016596877, 68.05393839657533, 61.31360282957357]
+2023-01-23 03:26:40,813   INFO  
+
+2023-01-23 03:26:40,840   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_90'
+2023-01-23 03:26:41,614   INFO  ------ TRAIN EPOCH 091 ------
+2023-01-23 03:26:41,615   INFO  Learning Rate: 0.001000
+2023-01-23 03:26:42,250   INFO  Weights:  depth_:0.9911, heading_:0.9911, offset2d_:1.0000, offset3d_:0.9911, seg_:1.0000, size2d_:1.0000, size3d_:0.9911,
+2023-01-23 03:29:35,200   INFO  BATCH[0200/0232] affinity_kd:5.2108, backbone_loss_l1:0.1485, depth_loss:1.5733, head_kd:3.7417, heading_loss:0.1015, offset2d_loss:0.2480, offset3d_loss:0.2118, seg_loss:0.1733, size2d_loss:0.5837, size3d_loss:0.0849,
+2023-01-23 03:30:01,212   INFO  ------ TRAIN EPOCH 092 ------
+2023-01-23 03:30:01,213   INFO  Learning Rate: 0.001000
+2023-01-23 03:30:01,853   INFO  Weights:  depth_:0.9910, heading_:0.9910, offset2d_:1.0000, offset3d_:0.9910, seg_:1.0000, size2d_:1.0000, size3d_:0.9910,
+2023-01-23 03:32:55,580   INFO  BATCH[0200/0232] affinity_kd:5.1946, backbone_loss_l1:0.1482, depth_loss:1.5309, head_kd:3.7264, heading_loss:0.0974, offset2d_loss:0.2493, offset3d_loss:0.2125, seg_loss:0.1769, size2d_loss:0.6007, size3d_loss:0.0842,
+2023-01-23 03:33:21,470   INFO  ------ TRAIN EPOCH 093 ------
+2023-01-23 03:33:21,471   INFO  Learning Rate: 0.001000
+2023-01-23 03:33:22,110   INFO  Weights:  depth_:0.9968, heading_:0.9968, offset2d_:1.0000, offset3d_:0.9968, seg_:1.0000, size2d_:1.0000, size3d_:0.9968,
+2023-01-23 03:36:15,644   INFO  BATCH[0200/0232] affinity_kd:5.1807, backbone_loss_l1:0.1487, depth_loss:1.6238, head_kd:3.7798, heading_loss:0.1035, offset2d_loss:0.2471, offset3d_loss:0.2121, seg_loss:0.1816, size2d_loss:0.6080, size3d_loss:0.0853,
+2023-01-23 03:36:41,687   INFO  ------ TRAIN EPOCH 094 ------
+2023-01-23 03:36:41,688   INFO  Learning Rate: 0.001000
+2023-01-23 03:36:42,469   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 03:39:34,447   INFO  BATCH[0200/0232] affinity_kd:5.1778, backbone_loss_l1:0.1486, depth_loss:1.7563, head_kd:3.8050, heading_loss:0.1061, offset2d_loss:0.2564, offset3d_loss:0.2131, seg_loss:0.1859, size2d_loss:0.6049, size3d_loss:0.0848,
+2023-01-23 03:40:00,321   INFO  ------ TRAIN EPOCH 095 ------
+2023-01-23 03:40:00,322   INFO  Learning Rate: 0.001000
+2023-01-23 03:40:01,035   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 03:42:43,760   INFO  BATCH[0200/0232] affinity_kd:5.1447, backbone_loss_l1:0.1490, depth_loss:1.5444, head_kd:3.7033, heading_loss:0.1007, offset2d_loss:0.2487, offset3d_loss:0.2148, seg_loss:0.1724, size2d_loss:0.6005, size3d_loss:0.0843,
+2023-01-23 03:43:02,112   INFO  ------ TRAIN EPOCH 096 ------
+2023-01-23 03:43:02,113   INFO  Learning Rate: 0.000100
+2023-01-23 03:43:03,318   INFO  Weights:  depth_:0.9571, heading_:0.9994, offset2d_:1.0000, offset3d_:0.9994, seg_:1.0000, size2d_:1.0000, size3d_:0.9994,
+2023-01-23 03:45:15,110   INFO  BATCH[0200/0232] affinity_kd:5.0212, backbone_loss_l1:0.1386, depth_loss:0.9534, head_kd:3.3006, heading_loss:0.0798, offset2d_loss:0.2398, offset3d_loss:0.2112, seg_loss:0.1585, size2d_loss:0.4906, size3d_loss:0.0795,
+2023-01-23 03:45:33,154   INFO  ------ TRAIN EPOCH 097 ------
+2023-01-23 03:45:33,155   INFO  Learning Rate: 0.000100
+2023-01-23 03:45:33,987   INFO  Weights:  depth_:0.9700, heading_:0.9968, offset2d_:1.0000, offset3d_:0.9968, seg_:1.0000, size2d_:1.0000, size3d_:0.9968,
+2023-01-23 03:47:46,348   INFO  BATCH[0200/0232] affinity_kd:4.9342, backbone_loss_l1:0.1375, depth_loss:0.8506, head_kd:3.2335, heading_loss:0.0752, offset2d_loss:0.2369, offset3d_loss:0.2102, seg_loss:0.1555, size2d_loss:0.4840, size3d_loss:0.0786,
+2023-01-23 03:48:04,578   INFO  ------ TRAIN EPOCH 098 ------
+2023-01-23 03:48:04,579   INFO  Learning Rate: 0.000100
+2023-01-23 03:48:05,419   INFO  Weights:  depth_:0.9863, heading_:0.9863, offset2d_:1.0000, offset3d_:0.9863, seg_:1.0000, size2d_:1.0000, size3d_:0.9863,
+2023-01-23 03:50:16,701   INFO  BATCH[0200/0232] affinity_kd:4.8905, backbone_loss_l1:0.1352, depth_loss:0.7722, head_kd:3.0798, heading_loss:0.0733, offset2d_loss:0.2322, offset3d_loss:0.2109, seg_loss:0.1394, size2d_loss:0.4512, size3d_loss:0.0776,
+2023-01-23 03:50:34,503   INFO  ------ TRAIN EPOCH 099 ------
+2023-01-23 03:50:34,504   INFO  Learning Rate: 0.000100
+2023-01-23 03:50:35,251   INFO  Weights:  depth_:0.9726, heading_:0.9726, offset2d_:1.0000, offset3d_:0.9726, seg_:1.0000, size2d_:1.0000, size3d_:0.9726,
+2023-01-23 03:52:44,192   INFO  BATCH[0200/0232] affinity_kd:4.9098, backbone_loss_l1:0.1356, depth_loss:0.7818, head_kd:3.2204, heading_loss:0.0730, offset2d_loss:0.2340, offset3d_loss:0.2124, seg_loss:0.1516, size2d_loss:0.4723, size3d_loss:0.0776,
+2023-01-23 03:53:02,406   INFO  ------ TRAIN EPOCH 100 ------
+2023-01-23 03:53:02,407   INFO  Learning Rate: 0.000100
+2023-01-23 03:53:03,066   INFO  Weights:  depth_:0.9681, heading_:0.9681, offset2d_:1.0000, offset3d_:0.9681, seg_:1.0000, size2d_:1.0000, size3d_:0.9681,
+2023-01-23 03:55:14,648   INFO  BATCH[0200/0232] affinity_kd:4.8856, backbone_loss_l1:0.1342, depth_loss:0.7470, head_kd:3.0655, heading_loss:0.0686, offset2d_loss:0.2270, offset3d_loss:0.2111, seg_loss:0.1398, size2d_loss:0.4295, size3d_loss:0.0768,
+2023-01-23 03:55:32,595   INFO  ------ EVAL EPOCH 100 ------
+2023-01-23 03:57:12,001   INFO  ------------------evalute model: EPOCH_100--------------------
+2023-01-23 03:57:12,001   INFO  ********************Car********************
+2023-01-23 03:57:16,884   INFO  bbox@0.70 [99.20177900468087, 93.46478797208223, 86.04130144819997]
+2023-01-23 03:57:16,884   INFO  bev@0.70  [34.77976088132785, 25.333960782120858, 21.951492737869753]
+2023-01-23 03:57:16,884   INFO  3d@0.70   [27.001593471296303, 18.656382297831353, 16.261474549663856]
+2023-01-23 03:57:16,884   INFO  aos       [98.78916993949765, 92.57416472160038, 84.32139812961856]
+2023-01-23 03:57:16,884   INFO  bev@0.50  [71.80347594050592, 55.198856801154484, 50.130596983650996]
+2023-01-23 03:57:16,884   INFO  3d@0.50   [66.57468666152782, 51.612154333717584, 45.379362441287334]
+2023-01-23 03:57:16,884   INFO  bev@0.30  [89.62486948789163, 74.4443053898054, 69.08902477728549]
+2023-01-23 03:57:16,884   INFO  3d@0.30   [87.02400274787556, 71.85310653200317, 66.54569700566552]
+2023-01-23 03:57:16,885   INFO  
+
+2023-01-23 03:57:16,910   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_100'
+2023-01-23 03:57:17,688   INFO  ------ TRAIN EPOCH 101 ------
+2023-01-23 03:57:17,689   INFO  Learning Rate: 0.000100
+2023-01-23 03:57:18,564   INFO  Weights:  depth_:0.9780, heading_:0.9780, offset2d_:1.0000, offset3d_:0.9780, seg_:1.0000, size2d_:1.0000, size3d_:0.9780,
+2023-01-23 03:59:29,412   INFO  BATCH[0200/0232] affinity_kd:4.8598, backbone_loss_l1:0.1343, depth_loss:0.7392, head_kd:3.1354, heading_loss:0.0667, offset2d_loss:0.2229, offset3d_loss:0.2123, seg_loss:0.1398, size2d_loss:0.4300, size3d_loss:0.0773,
+2023-01-23 03:59:47,330   INFO  ------ TRAIN EPOCH 102 ------
+2023-01-23 03:59:47,331   INFO  Learning Rate: 0.000100
+2023-01-23 03:59:48,179   INFO  Weights:  depth_:0.9912, heading_:0.9912, offset2d_:1.0000, offset3d_:0.9912, seg_:1.0000, size2d_:1.0000, size3d_:0.9912,
+2023-01-23 04:01:58,086   INFO  BATCH[0200/0232] affinity_kd:4.8562, backbone_loss_l1:0.1328, depth_loss:0.6920, head_kd:3.0403, heading_loss:0.0637, offset2d_loss:0.2253, offset3d_loss:0.2120, seg_loss:0.1384, size2d_loss:0.4280, size3d_loss:0.0763,
+2023-01-23 04:02:16,045   INFO  ------ TRAIN EPOCH 103 ------
+2023-01-23 04:02:16,046   INFO  Learning Rate: 0.000100
+2023-01-23 04:02:16,797   INFO  Weights:  depth_:0.9953, heading_:0.9953, offset2d_:1.0000, offset3d_:0.9953, seg_:1.0000, size2d_:1.0000, size3d_:0.9953,
+2023-01-23 04:04:28,085   INFO  BATCH[0200/0232] affinity_kd:4.8482, backbone_loss_l1:0.1348, depth_loss:0.6867, head_kd:3.1333, heading_loss:0.0637, offset2d_loss:0.2321, offset3d_loss:0.2120, seg_loss:0.1406, size2d_loss:0.4397, size3d_loss:0.0768,
+2023-01-23 04:04:46,102   INFO  ------ TRAIN EPOCH 104 ------
+2023-01-23 04:04:46,103   INFO  Learning Rate: 0.000100
+2023-01-23 04:04:46,880   INFO  Weights:  depth_:0.9953, heading_:0.9953, offset2d_:1.0000, offset3d_:0.9953, seg_:1.0000, size2d_:1.0000, size3d_:0.9953,
+2023-01-23 04:07:00,414   INFO  BATCH[0200/0232] affinity_kd:4.8277, backbone_loss_l1:0.1334, depth_loss:0.6774, head_kd:3.0680, heading_loss:0.0637, offset2d_loss:0.2209, offset3d_loss:0.2110, seg_loss:0.1329, size2d_loss:0.4263, size3d_loss:0.0765,
+2023-01-23 04:07:18,769   INFO  ------ TRAIN EPOCH 105 ------
+2023-01-23 04:07:18,770   INFO  Learning Rate: 0.000100
+2023-01-23 04:07:19,658   INFO  Weights:  depth_:0.9956, heading_:0.9956, offset2d_:1.0000, offset3d_:0.9956, seg_:1.0000, size2d_:1.0000, size3d_:0.9956,
+2023-01-23 04:09:32,620   INFO  BATCH[0200/0232] affinity_kd:4.8410, backbone_loss_l1:0.1327, depth_loss:0.6465, head_kd:3.0475, heading_loss:0.0644, offset2d_loss:0.2242, offset3d_loss:0.2119, seg_loss:0.1403, size2d_loss:0.4255, size3d_loss:0.0762,
+2023-01-23 04:09:50,909   INFO  ------ TRAIN EPOCH 106 ------
+2023-01-23 04:09:50,910   INFO  Learning Rate: 0.000100
+2023-01-23 04:09:51,970   INFO  Weights:  depth_:0.9959, heading_:0.9969, offset2d_:1.0000, offset3d_:0.9969, seg_:1.0000, size2d_:1.0000, size3d_:0.9969,
+2023-01-23 04:12:00,955   INFO  BATCH[0200/0232] affinity_kd:4.8351, backbone_loss_l1:0.1324, depth_loss:0.7166, head_kd:3.0527, heading_loss:0.0646, offset2d_loss:0.2271, offset3d_loss:0.2105, seg_loss:0.1361, size2d_loss:0.4266, size3d_loss:0.0759,
+2023-01-23 04:12:18,762   INFO  ------ TRAIN EPOCH 107 ------
+2023-01-23 04:12:18,763   INFO  Learning Rate: 0.000100
+2023-01-23 04:12:19,533   INFO  Weights:  depth_:0.9981, heading_:0.9981, offset2d_:1.0000, offset3d_:0.9981, seg_:1.0000, size2d_:1.0000, size3d_:0.9981,
+2023-01-23 04:14:31,944   INFO  BATCH[0200/0232] affinity_kd:4.8315, backbone_loss_l1:0.1333, depth_loss:0.6981, head_kd:3.1025, heading_loss:0.0651, offset2d_loss:0.2242, offset3d_loss:0.2112, seg_loss:0.1390, size2d_loss:0.4202, size3d_loss:0.0770,
+2023-01-23 04:14:49,844   INFO  ------ TRAIN EPOCH 108 ------
+2023-01-23 04:14:49,845   INFO  Learning Rate: 0.000100
+2023-01-23 04:14:50,601   INFO  Weights:  depth_:0.9993, heading_:0.9993, offset2d_:1.0000, offset3d_:0.9993, seg_:1.0000, size2d_:1.0000, size3d_:0.9993,
+2023-01-23 04:17:03,590   INFO  BATCH[0200/0232] affinity_kd:4.8144, backbone_loss_l1:0.1311, depth_loss:0.5986, head_kd:2.9902, heading_loss:0.0651, offset2d_loss:0.2205, offset3d_loss:0.2107, seg_loss:0.1267, size2d_loss:0.4050, size3d_loss:0.0751,
+2023-01-23 04:17:21,823   INFO  ------ TRAIN EPOCH 109 ------
+2023-01-23 04:17:21,824   INFO  Learning Rate: 0.000100
+2023-01-23 04:17:22,633   INFO  Weights:  depth_:0.9997, heading_:0.9997, offset2d_:1.0000, offset3d_:0.9997, seg_:1.0000, size2d_:1.0000, size3d_:0.9997,
+2023-01-23 04:19:35,615   INFO  BATCH[0200/0232] affinity_kd:4.8604, backbone_loss_l1:0.1316, depth_loss:0.6290, head_kd:3.0634, heading_loss:0.0642, offset2d_loss:0.2230, offset3d_loss:0.2118, seg_loss:0.1352, size2d_loss:0.4172, size3d_loss:0.0757,
+2023-01-23 04:19:53,398   INFO  ------ TRAIN EPOCH 110 ------
+2023-01-23 04:19:53,399   INFO  Learning Rate: 0.000100
+2023-01-23 04:19:54,397   INFO  Weights:  depth_:0.9985, heading_:0.9985, offset2d_:1.0000, offset3d_:0.9985, seg_:1.0000, size2d_:1.0000, size3d_:0.9985,
+2023-01-23 04:22:07,307   INFO  BATCH[0200/0232] affinity_kd:4.8489, backbone_loss_l1:0.1314, depth_loss:0.6583, head_kd:3.0199, heading_loss:0.0668, offset2d_loss:0.2194, offset3d_loss:0.2099, seg_loss:0.1314, size2d_loss:0.4033, size3d_loss:0.0757,
+2023-01-23 04:22:25,808   INFO  ------ EVAL EPOCH 110 ------
+2023-01-23 04:24:07,016   INFO  ------------------evalute model: EPOCH_110--------------------
+2023-01-23 04:24:07,016   INFO  ********************Car********************
+2023-01-23 04:24:11,919   INFO  bbox@0.70 [99.17380592761036, 93.40318996797608, 86.05463706629082]
+2023-01-23 04:24:11,919   INFO  bev@0.70  [35.35270287073629, 25.68929736505099, 22.212286837774826]
+2023-01-23 04:24:11,919   INFO  3d@0.70   [27.398348973435176, 19.13186053839793, 16.89439651271856]
+2023-01-23 04:24:11,919   INFO  aos       [98.67102620657278, 92.45082647815404, 84.29074028334303]
+2023-01-23 04:24:11,919   INFO  bev@0.50  [72.53544546614687, 55.61197781349069, 50.51099965630599]
+2023-01-23 04:24:11,920   INFO  3d@0.50   [66.75877002022933, 50.49850735327327, 45.5279050784407]
+2023-01-23 04:24:11,920   INFO  bev@0.30  [89.32222978945109, 74.1982140498476, 67.24790901910731]
+2023-01-23 04:24:11,920   INFO  3d@0.30   [87.10734047751565, 71.90242782010773, 66.65948278837466]
+2023-01-23 04:24:11,920   INFO  
+
+2023-01-23 04:24:11,955   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_110'
+2023-01-23 04:24:12,727   INFO  ------ TRAIN EPOCH 111 ------
+2023-01-23 04:24:12,728   INFO  Learning Rate: 0.000100
+2023-01-23 04:24:13,721   INFO  Weights:  depth_:0.9992, heading_:0.9992, offset2d_:1.0000, offset3d_:0.9992, seg_:1.0000, size2d_:1.0000, size3d_:0.9992,
+2023-01-23 04:26:25,091   INFO  BATCH[0200/0232] affinity_kd:4.8016, backbone_loss_l1:0.1312, depth_loss:0.6416, head_kd:3.0674, heading_loss:0.0649, offset2d_loss:0.2257, offset3d_loss:0.2093, seg_loss:0.1394, size2d_loss:0.4211, size3d_loss:0.0763,
+2023-01-23 04:26:43,018   INFO  ------ TRAIN EPOCH 112 ------
+2023-01-23 04:26:43,018   INFO  Learning Rate: 0.000100
+2023-01-23 04:26:43,897   INFO  Weights:  depth_:0.9996, heading_:0.9996, offset2d_:1.0000, offset3d_:0.9996, seg_:1.0000, size2d_:1.0000, size3d_:0.9996,
+2023-01-23 04:28:53,320   INFO  BATCH[0200/0232] affinity_kd:4.8603, backbone_loss_l1:0.1313, depth_loss:0.6387, head_kd:3.0666, heading_loss:0.0629, offset2d_loss:0.2268, offset3d_loss:0.2105, seg_loss:0.1351, size2d_loss:0.4078, size3d_loss:0.0756,
+2023-01-23 04:29:11,059   INFO  ------ TRAIN EPOCH 113 ------
+2023-01-23 04:29:11,060   INFO  Learning Rate: 0.000100
+2023-01-23 04:29:11,765   INFO  Weights:  depth_:0.9990, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 04:31:25,735   INFO  BATCH[0200/0232] affinity_kd:4.8114, backbone_loss_l1:0.1306, depth_loss:0.6079, head_kd:3.0620, heading_loss:0.0651, offset2d_loss:0.2232, offset3d_loss:0.2102, seg_loss:0.1356, size2d_loss:0.4157, size3d_loss:0.0755,
+2023-01-23 04:31:44,149   INFO  ------ TRAIN EPOCH 114 ------
+2023-01-23 04:31:44,150   INFO  Learning Rate: 0.000100
+2023-01-23 04:31:44,994   INFO  Weights:  depth_:0.9994, heading_:0.9994, offset2d_:1.0000, offset3d_:0.9994, seg_:1.0000, size2d_:1.0000, size3d_:0.9994,
+2023-01-23 04:33:54,404   INFO  BATCH[0200/0232] affinity_kd:4.7980, backbone_loss_l1:0.1306, depth_loss:0.5871, head_kd:3.0364, heading_loss:0.0622, offset2d_loss:0.2191, offset3d_loss:0.2095, seg_loss:0.1358, size2d_loss:0.4020, size3d_loss:0.0757,
+2023-01-23 04:34:12,414   INFO  ------ TRAIN EPOCH 115 ------
+2023-01-23 04:34:12,415   INFO  Learning Rate: 0.000100
+2023-01-23 04:34:13,125   INFO  Weights:  depth_:0.9951, heading_:0.9992, offset2d_:1.0000, offset3d_:0.9992, seg_:1.0000, size2d_:1.0000, size3d_:0.9992,
+2023-01-23 04:36:22,718   INFO  BATCH[0200/0232] affinity_kd:4.7875, backbone_loss_l1:0.1330, depth_loss:0.6033, head_kd:3.0062, heading_loss:0.0623, offset2d_loss:0.2174, offset3d_loss:0.2109, seg_loss:0.1309, size2d_loss:0.3936, size3d_loss:0.0753,
+2023-01-23 04:36:40,612   INFO  ------ TRAIN EPOCH 116 ------
+2023-01-23 04:36:40,613   INFO  Learning Rate: 0.000100
+2023-01-23 04:36:41,319   INFO  Weights:  depth_:0.9991, heading_:0.9991, offset2d_:1.0000, offset3d_:0.9991, seg_:1.0000, size2d_:1.0000, size3d_:0.9991,
+2023-01-23 04:38:53,820   INFO  BATCH[0200/0232] affinity_kd:4.8114, backbone_loss_l1:0.1305, depth_loss:0.5615, head_kd:2.9726, heading_loss:0.0629, offset2d_loss:0.2196, offset3d_loss:0.2112, seg_loss:0.1274, size2d_loss:0.4031, size3d_loss:0.0744,
+2023-01-23 04:39:12,007   INFO  ------ TRAIN EPOCH 117 ------
+2023-01-23 04:39:12,008   INFO  Learning Rate: 0.000100
+2023-01-23 04:39:12,863   INFO  Weights:  depth_:0.9980, heading_:0.9980, offset2d_:1.0000, offset3d_:0.9980, seg_:1.0000, size2d_:1.0000, size3d_:0.9980,
+2023-01-23 04:41:23,726   INFO  BATCH[0200/0232] affinity_kd:4.8034, backbone_loss_l1:0.1313, depth_loss:0.5705, head_kd:3.0577, heading_loss:0.0616, offset2d_loss:0.2173, offset3d_loss:0.2089, seg_loss:0.1273, size2d_loss:0.4006, size3d_loss:0.0744,
+2023-01-23 04:41:41,838   INFO  ------ TRAIN EPOCH 118 ------
+2023-01-23 04:41:41,839   INFO  Learning Rate: 0.000100
+2023-01-23 04:41:42,632   INFO  Weights:  depth_:0.9979, heading_:0.9979, offset2d_:1.0000, offset3d_:0.9979, seg_:1.0000, size2d_:1.0000, size3d_:0.9979,
+2023-01-23 04:43:50,676   INFO  BATCH[0200/0232] affinity_kd:4.8262, backbone_loss_l1:0.1305, depth_loss:0.5925, head_kd:3.0138, heading_loss:0.0572, offset2d_loss:0.2229, offset3d_loss:0.2092, seg_loss:0.1310, size2d_loss:0.3987, size3d_loss:0.0750,
+2023-01-23 04:44:08,704   INFO  ------ TRAIN EPOCH 119 ------
+2023-01-23 04:44:08,705   INFO  Learning Rate: 0.000100
+2023-01-23 04:44:09,572   INFO  Weights:  depth_:0.9998, heading_:0.9998, offset2d_:1.0000, offset3d_:0.9998, seg_:1.0000, size2d_:1.0000, size3d_:0.9998,
+2023-01-23 04:46:20,371   INFO  BATCH[0200/0232] affinity_kd:4.7963, backbone_loss_l1:0.1313, depth_loss:0.5685, head_kd:3.0536, heading_loss:0.0607, offset2d_loss:0.2225, offset3d_loss:0.2112, seg_loss:0.1376, size2d_loss:0.4051, size3d_loss:0.0754,
+2023-01-23 04:46:38,027   INFO  ------ TRAIN EPOCH 120 ------
+2023-01-23 04:46:38,028   INFO  Learning Rate: 0.000100
+2023-01-23 04:46:38,859   INFO  Weights:  depth_:0.9963, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 04:48:52,573   INFO  BATCH[0200/0232] affinity_kd:4.7975, backbone_loss_l1:0.1304, depth_loss:0.5737, head_kd:2.9917, heading_loss:0.0609, offset2d_loss:0.2217, offset3d_loss:0.2094, seg_loss:0.1281, size2d_loss:0.3958, size3d_loss:0.0751,
+2023-01-23 04:49:10,795   INFO  ------ EVAL EPOCH 120 ------
+2023-01-23 04:50:51,975   INFO  ------------------evalute model: EPOCH_120--------------------
+2023-01-23 04:50:51,975   INFO  ********************Car********************
+2023-01-23 04:50:56,870   INFO  bbox@0.70 [99.24813199992772, 93.48886260911667, 86.07220411092685]
+2023-01-23 04:50:56,871   INFO  bev@0.70  [35.502977453410516, 25.55182843831908, 21.910457405848437]
+2023-01-23 04:50:56,871   INFO  3d@0.70   [26.744491451201785, 18.670299522810325, 16.118788501192004]
+2023-01-23 04:50:56,871   INFO  aos       [98.78094680376745, 92.60715510050582, 84.4108639007205]
+2023-01-23 04:50:56,871   INFO  bev@0.50  [72.72351816804826, 55.73517781744928, 50.45802355140574]
+2023-01-23 04:50:56,871   INFO  3d@0.50   [68.86577188877997, 52.114894535008226, 45.609235173343066]
+2023-01-23 04:50:56,871   INFO  bev@0.30  [89.59657723512431, 74.32693851594748, 67.25392773308764]
+2023-01-23 04:50:56,871   INFO  3d@0.30   [87.14596813149473, 71.91193083656742, 66.55777079717912]
+2023-01-23 04:50:56,871   INFO  
+
+2023-01-23 04:50:56,897   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_120'
+2023-01-23 04:50:57,671   INFO  ------ TRAIN EPOCH 121 ------
+2023-01-23 04:50:57,672   INFO  Learning Rate: 0.000100
+2023-01-23 04:50:58,653   INFO  Weights:  depth_:0.9991, heading_:0.9998, offset2d_:1.0000, offset3d_:0.9998, seg_:1.0000, size2d_:1.0000, size3d_:0.9998,
+2023-01-23 04:53:11,927   INFO  BATCH[0200/0232] affinity_kd:4.7568, backbone_loss_l1:0.1310, depth_loss:0.5642, head_kd:2.9642, heading_loss:0.0620, offset2d_loss:0.2164, offset3d_loss:0.2101, seg_loss:0.1337, size2d_loss:0.4016, size3d_loss:0.0753,
+2023-01-23 04:53:29,760   INFO  ------ TRAIN EPOCH 122 ------
+2023-01-23 04:53:29,761   INFO  Learning Rate: 0.000100
+2023-01-23 04:53:30,493   INFO  Weights:  depth_:0.9992, heading_:0.9992, offset2d_:1.0000, offset3d_:0.9992, seg_:1.0000, size2d_:1.0000, size3d_:0.9992,
+2023-01-23 04:55:42,844   INFO  BATCH[0200/0232] affinity_kd:4.8038, backbone_loss_l1:0.1296, depth_loss:0.5388, head_kd:3.0483, heading_loss:0.0638, offset2d_loss:0.2247, offset3d_loss:0.2112, seg_loss:0.1335, size2d_loss:0.4136, size3d_loss:0.0744,
+2023-01-23 04:56:01,071   INFO  ------ TRAIN EPOCH 123 ------
+2023-01-23 04:56:01,072   INFO  Learning Rate: 0.000100
+2023-01-23 04:56:01,974   INFO  Weights:  depth_:0.9986, heading_:0.9986, offset2d_:1.0000, offset3d_:0.9986, seg_:1.0000, size2d_:1.0000, size3d_:0.9986,
+2023-01-23 04:58:13,887   INFO  BATCH[0200/0232] affinity_kd:4.7793, backbone_loss_l1:0.1281, depth_loss:0.5284, head_kd:3.0129, heading_loss:0.0597, offset2d_loss:0.2247, offset3d_loss:0.2095, seg_loss:0.1296, size2d_loss:0.3999, size3d_loss:0.0748,
+2023-01-23 04:58:32,101   INFO  ------ TRAIN EPOCH 124 ------
+2023-01-23 04:58:32,102   INFO  Learning Rate: 0.000100
+2023-01-23 04:58:33,069   INFO  Weights:  depth_:0.9950, heading_:0.9993, offset2d_:1.0000, offset3d_:0.9993, seg_:1.0000, size2d_:1.0000, size3d_:0.9993,
+2023-01-23 05:00:44,175   INFO  BATCH[0200/0232] affinity_kd:4.7543, backbone_loss_l1:0.1294, depth_loss:0.5492, head_kd:2.9937, heading_loss:0.0605, offset2d_loss:0.2190, offset3d_loss:0.2109, seg_loss:0.1291, size2d_loss:0.3973, size3d_loss:0.0745,
+2023-01-23 05:01:02,097   INFO  ------ TRAIN EPOCH 125 ------
+2023-01-23 05:01:02,098   INFO  Learning Rate: 0.000100
+2023-01-23 05:01:02,839   INFO  Weights:  depth_:0.9937, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 05:03:16,132   INFO  BATCH[0200/0232] affinity_kd:4.7524, backbone_loss_l1:0.1296, depth_loss:0.5218, head_kd:2.9915, heading_loss:0.0579, offset2d_loss:0.2174, offset3d_loss:0.2117, seg_loss:0.1246, size2d_loss:0.3817, size3d_loss:0.0746,
+2023-01-23 05:03:34,272   INFO  ------ TRAIN EPOCH 126 ------
+2023-01-23 05:03:34,273   INFO  Learning Rate: 0.000010
+2023-01-23 05:03:34,937   INFO  Weights:  depth_:0.9991, heading_:0.9994, offset2d_:1.0000, offset3d_:0.9994, seg_:1.0000, size2d_:1.0000, size3d_:0.9994,
+2023-01-23 05:05:50,341   INFO  BATCH[0200/0232] affinity_kd:4.7465, backbone_loss_l1:0.1273, depth_loss:0.4807, head_kd:2.9516, heading_loss:0.0600, offset2d_loss:0.2186, offset3d_loss:0.2091, seg_loss:0.1261, size2d_loss:0.3851, size3d_loss:0.0741,
+2023-01-23 05:06:08,350   INFO  ------ TRAIN EPOCH 127 ------
+2023-01-23 05:06:08,350   INFO  Learning Rate: 0.000010
+2023-01-23 05:06:09,106   INFO  Weights:  depth_:0.9990, heading_:0.9990, offset2d_:1.0000, offset3d_:0.9990, seg_:1.0000, size2d_:1.0000, size3d_:0.9990,
+2023-01-23 05:08:23,643   INFO  BATCH[0200/0232] affinity_kd:4.7468, backbone_loss_l1:0.1277, depth_loss:0.4185, head_kd:2.8708, heading_loss:0.0594, offset2d_loss:0.2136, offset3d_loss:0.2088, seg_loss:0.1250, size2d_loss:0.3698, size3d_loss:0.0738,
+2023-01-23 05:08:41,812   INFO  ------ TRAIN EPOCH 128 ------
+2023-01-23 05:08:41,812   INFO  Learning Rate: 0.000010
+2023-01-23 05:08:42,495   INFO  Weights:  depth_:0.9985, heading_:0.9985, offset2d_:1.0000, offset3d_:0.9985, seg_:1.0000, size2d_:1.0000, size3d_:0.9985,
+2023-01-23 05:10:56,911   INFO  BATCH[0200/0232] affinity_kd:4.7396, backbone_loss_l1:0.1296, depth_loss:0.4856, head_kd:2.9288, heading_loss:0.0574, offset2d_loss:0.2166, offset3d_loss:0.2086, seg_loss:0.1268, size2d_loss:0.3758, size3d_loss:0.0741,
+2023-01-23 05:11:15,097   INFO  ------ TRAIN EPOCH 129 ------
+2023-01-23 05:11:15,098   INFO  Learning Rate: 0.000010
+2023-01-23 05:11:15,899   INFO  Weights:  depth_:0.9990, heading_:0.9990, offset2d_:1.0000, offset3d_:0.9990, seg_:1.0000, size2d_:1.0000, size3d_:0.9990,
+2023-01-23 05:13:28,237   INFO  BATCH[0200/0232] affinity_kd:4.7424, backbone_loss_l1:0.1268, depth_loss:0.4528, head_kd:2.9583, heading_loss:0.0582, offset2d_loss:0.2235, offset3d_loss:0.2098, seg_loss:0.1334, size2d_loss:0.3893, size3d_loss:0.0742,
+2023-01-23 05:13:46,234   INFO  ------ TRAIN EPOCH 130 ------
+2023-01-23 05:13:46,235   INFO  Learning Rate: 0.000010
+2023-01-23 05:13:46,918   INFO  Weights:  depth_:0.9995, heading_:0.9995, offset2d_:1.0000, offset3d_:0.9995, seg_:1.0000, size2d_:1.0000, size3d_:0.9995,
+2023-01-23 05:15:58,286   INFO  BATCH[0200/0232] affinity_kd:4.7497, backbone_loss_l1:0.1286, depth_loss:0.4075, head_kd:2.8835, heading_loss:0.0624, offset2d_loss:0.2096, offset3d_loss:0.2087, seg_loss:0.1194, size2d_loss:0.3727, size3d_loss:0.0737,
+2023-01-23 05:16:16,247   INFO  ------ EVAL EPOCH 130 ------
+2023-01-23 05:17:56,049   INFO  ------------------evalute model: EPOCH_130--------------------
+2023-01-23 05:17:56,049   INFO  ********************Car********************
+2023-01-23 05:18:00,939   INFO  bbox@0.70 [99.23803905639475, 93.52424336811158, 86.08593329305346]
+2023-01-23 05:18:00,940   INFO  bev@0.70  [36.05719836962199, 25.911983028117103, 23.166210805516492]
+2023-01-23 05:18:00,940   INFO  3d@0.70   [27.6221979398266, 19.055178336354363, 16.56451423838843]
+2023-01-23 05:18:00,940   INFO  aos       [98.93522994699167, 92.75804755441268, 84.49810207072478]
+2023-01-23 05:18:00,940   INFO  bev@0.50  [72.60822268780147, 55.8745224563623, 50.6265248130796]
+2023-01-23 05:18:00,940   INFO  3d@0.50   [68.30026210195949, 51.96230609043535, 45.48298054428875]
+2023-01-23 05:18:00,940   INFO  bev@0.30  [89.55012716598031, 74.43187791509578, 69.0639868198694]
+2023-01-23 05:18:00,940   INFO  3d@0.30   [87.05393847654483, 71.91543216849776, 66.59336960399655]
+2023-01-23 05:18:00,940   INFO  
+
+2023-01-23 05:18:00,965   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_130'
+2023-01-23 05:18:01,763   INFO  ------ TRAIN EPOCH 131 ------
+2023-01-23 05:18:01,764   INFO  Learning Rate: 0.000010
+2023-01-23 05:18:02,570   INFO  Weights:  depth_:0.9982, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 05:20:14,094   INFO  BATCH[0200/0232] affinity_kd:4.7671, backbone_loss_l1:0.1288, depth_loss:0.4491, head_kd:2.9686, heading_loss:0.0592, offset2d_loss:0.2235, offset3d_loss:0.2097, seg_loss:0.1253, size2d_loss:0.3925, size3d_loss:0.0735,
+2023-01-23 05:20:32,138   INFO  ------ TRAIN EPOCH 132 ------
+2023-01-23 05:20:32,138   INFO  Learning Rate: 0.000010
+2023-01-23 05:20:33,228   INFO  Weights:  depth_:0.9981, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:22:46,551   INFO  BATCH[0200/0232] affinity_kd:4.7857, backbone_loss_l1:0.1304, depth_loss:0.4503, head_kd:2.9753, heading_loss:0.0588, offset2d_loss:0.2151, offset3d_loss:0.2086, seg_loss:0.1282, size2d_loss:0.3819, size3d_loss:0.0742,
+2023-01-23 05:23:04,540   INFO  ------ TRAIN EPOCH 133 ------
+2023-01-23 05:23:04,541   INFO  Learning Rate: 0.000010
+2023-01-23 05:23:05,434   INFO  Weights:  depth_:0.9981, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:25:18,719   INFO  BATCH[0200/0232] affinity_kd:4.7459, backbone_loss_l1:0.1279, depth_loss:0.4408, head_kd:2.9434, heading_loss:0.0610, offset2d_loss:0.2154, offset3d_loss:0.2096, seg_loss:0.1244, size2d_loss:0.3772, size3d_loss:0.0739,
+2023-01-23 05:25:36,871   INFO  ------ TRAIN EPOCH 134 ------
+2023-01-23 05:25:36,872   INFO  Learning Rate: 0.000010
+2023-01-23 05:25:37,800   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:27:52,085   INFO  BATCH[0200/0232] affinity_kd:4.7527, backbone_loss_l1:0.1276, depth_loss:0.4162, head_kd:2.9468, heading_loss:0.0583, offset2d_loss:0.2156, offset3d_loss:0.2082, seg_loss:0.1247, size2d_loss:0.3742, size3d_loss:0.0731,
+2023-01-23 05:28:10,196   INFO  ------ TRAIN EPOCH 135 ------
+2023-01-23 05:28:10,197   INFO  Learning Rate: 0.000010
+2023-01-23 05:28:11,095   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:30:23,289   INFO  BATCH[0200/0232] affinity_kd:4.7449, backbone_loss_l1:0.1279, depth_loss:0.4409, head_kd:2.9792, heading_loss:0.0576, offset2d_loss:0.2115, offset3d_loss:0.2085, seg_loss:0.1277, size2d_loss:0.3702, size3d_loss:0.0743,
+2023-01-23 05:30:41,440   INFO  ------ TRAIN EPOCH 136 ------
+2023-01-23 05:30:41,440   INFO  Learning Rate: 0.000010
+2023-01-23 05:30:42,293   INFO  Weights:  depth_:0.9999, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 05:32:54,950   INFO  BATCH[0200/0232] affinity_kd:4.7303, backbone_loss_l1:0.1293, depth_loss:0.4555, head_kd:2.9719, heading_loss:0.0559, offset2d_loss:0.2179, offset3d_loss:0.2105, seg_loss:0.1288, size2d_loss:0.3815, size3d_loss:0.0741,
+2023-01-23 05:33:13,148   INFO  ------ TRAIN EPOCH 137 ------
+2023-01-23 05:33:13,149   INFO  Learning Rate: 0.000010
+2023-01-23 05:33:14,073   INFO  Weights:  depth_:0.9998, heading_:0.9998, offset2d_:1.0000, offset3d_:0.9998, seg_:1.0000, size2d_:1.0000, size3d_:0.9998,
+2023-01-23 05:35:23,770   INFO  BATCH[0200/0232] affinity_kd:4.7284, backbone_loss_l1:0.1271, depth_loss:0.4288, head_kd:2.9659, heading_loss:0.0576, offset2d_loss:0.2210, offset3d_loss:0.2109, seg_loss:0.1293, size2d_loss:0.3890, size3d_loss:0.0738,
+2023-01-23 05:35:41,823   INFO  ------ TRAIN EPOCH 138 ------
+2023-01-23 05:35:41,824   INFO  Learning Rate: 0.000010
+2023-01-23 05:35:42,630   INFO  Weights:  depth_:0.9998, heading_:0.9998, offset2d_:1.0000, offset3d_:0.9998, seg_:1.0000, size2d_:1.0000, size3d_:0.9998,
+2023-01-23 05:37:54,870   INFO  BATCH[0200/0232] affinity_kd:4.7333, backbone_loss_l1:0.1278, depth_loss:0.4337, head_kd:2.9252, heading_loss:0.0581, offset2d_loss:0.2140, offset3d_loss:0.2087, seg_loss:0.1242, size2d_loss:0.3768, size3d_loss:0.0735,
+2023-01-23 05:38:13,095   INFO  ------ TRAIN EPOCH 139 ------
+2023-01-23 05:38:13,096   INFO  Learning Rate: 0.000010
+2023-01-23 05:38:13,844   INFO  Weights:  depth_:0.9993, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 05:40:27,107   INFO  BATCH[0200/0232] affinity_kd:4.7491, backbone_loss_l1:0.1287, depth_loss:0.4424, head_kd:2.9968, heading_loss:0.0567, offset2d_loss:0.2170, offset3d_loss:0.2085, seg_loss:0.1304, size2d_loss:0.3854, size3d_loss:0.0734,
+2023-01-23 05:40:44,965   INFO  ------ TRAIN EPOCH 140 ------
+2023-01-23 05:40:44,966   INFO  Learning Rate: 0.000010
+2023-01-23 05:40:45,718   INFO  Weights:  depth_:0.9996, heading_:0.9999, offset2d_:1.0000, offset3d_:0.9999, seg_:1.0000, size2d_:1.0000, size3d_:0.9999,
+2023-01-23 05:42:56,824   INFO  BATCH[0200/0232] affinity_kd:4.7231, backbone_loss_l1:0.1270, depth_loss:0.4127, head_kd:2.9365, heading_loss:0.0586, offset2d_loss:0.2168, offset3d_loss:0.2106, seg_loss:0.1260, size2d_loss:0.3817, size3d_loss:0.0734,
+2023-01-23 05:43:15,174   INFO  ------ EVAL EPOCH 140 ------
+2023-01-23 05:44:55,699   INFO  ------------------evalute model: EPOCH_140--------------------
+2023-01-23 05:44:55,700   INFO  ********************Car********************
+2023-01-23 05:45:00,604   INFO  bbox@0.70 [99.23404816317867, 93.54033214305456, 86.09356118809158]
+2023-01-23 05:45:00,604   INFO  bev@0.70  [36.04092622446821, 25.970515907119168, 23.189986919244504]
+2023-01-23 05:45:00,605   INFO  3d@0.70   [27.48662816312421, 18.988772002497996, 16.671896506988194]
+2023-01-23 05:45:00,605   INFO  aos       [98.85675748038389, 92.69431829175868, 84.46119315204541]
+2023-01-23 05:45:00,605   INFO  bev@0.50  [72.69037498638625, 55.914877457186726, 50.72439920247209]
+2023-01-23 05:45:00,605   INFO  3d@0.50   [68.78160229981567, 52.306460784821674, 47.169702734725035]
+2023-01-23 05:45:00,605   INFO  bev@0.30  [89.6878325555902, 74.46806095833904, 69.07774611139605]
+2023-01-23 05:45:00,605   INFO  3d@0.30   [87.21055997446217, 72.00423798164304, 66.66830061308507]
+2023-01-23 05:45:00,605   INFO  
+
+2023-01-23 05:45:00,633   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_140'
+2023-01-23 05:45:01,399   INFO  ------ TRAIN EPOCH 141 ------
+2023-01-23 05:45:01,400   INFO  Learning Rate: 0.000010
+2023-01-23 05:45:02,200   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:47:13,567   INFO  BATCH[0200/0232] affinity_kd:4.7329, backbone_loss_l1:0.1292, depth_loss:0.4420, head_kd:2.9676, heading_loss:0.0611, offset2d_loss:0.2177, offset3d_loss:0.2109, seg_loss:0.1341, size2d_loss:0.3867, size3d_loss:0.0741,
+2023-01-23 05:47:31,524   INFO  ------ TRAIN EPOCH 142 ------
+2023-01-23 05:47:31,524   INFO  Learning Rate: 0.000010
+2023-01-23 05:47:32,292   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:49:45,744   INFO  BATCH[0200/0232] affinity_kd:4.7012, backbone_loss_l1:0.1275, depth_loss:0.4422, head_kd:2.9635, heading_loss:0.0594, offset2d_loss:0.2182, offset3d_loss:0.2108, seg_loss:0.1231, size2d_loss:0.3741, size3d_loss:0.0731,
+2023-01-23 05:50:03,676   INFO  ------ TRAIN EPOCH 143 ------
+2023-01-23 05:50:03,676   INFO  Learning Rate: 0.000010
+2023-01-23 05:50:04,336   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:52:15,528   INFO  BATCH[0200/0232] affinity_kd:4.7284, backbone_loss_l1:0.1275, depth_loss:0.4172, head_kd:2.9829, heading_loss:0.0594, offset2d_loss:0.2207, offset3d_loss:0.2089, seg_loss:0.1261, size2d_loss:0.3840, size3d_loss:0.0739,
+2023-01-23 05:52:33,576   INFO  ------ TRAIN EPOCH 144 ------
+2023-01-23 05:52:33,577   INFO  Learning Rate: 0.000010
+2023-01-23 05:52:34,244   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:54:49,226   INFO  BATCH[0200/0232] affinity_kd:4.7556, backbone_loss_l1:0.1283, depth_loss:0.4228, head_kd:2.9781, heading_loss:0.0578, offset2d_loss:0.2160, offset3d_loss:0.2089, seg_loss:0.1279, size2d_loss:0.3769, size3d_loss:0.0742,
+2023-01-23 05:55:07,383   INFO  ------ TRAIN EPOCH 145 ------
+2023-01-23 05:55:07,384   INFO  Learning Rate: 0.000010
+2023-01-23 05:55:08,305   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:57:21,065   INFO  BATCH[0200/0232] affinity_kd:4.7240, backbone_loss_l1:0.1283, depth_loss:0.4372, head_kd:2.9060, heading_loss:0.0588, offset2d_loss:0.2155, offset3d_loss:0.2090, seg_loss:0.1242, size2d_loss:0.3784, size3d_loss:0.0738,
+2023-01-23 05:57:39,547   INFO  ------ TRAIN EPOCH 146 ------
+2023-01-23 05:57:39,548   INFO  Learning Rate: 0.000010
+2023-01-23 05:57:40,402   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 05:59:49,492   INFO  BATCH[0200/0232] affinity_kd:4.7472, backbone_loss_l1:0.1279, depth_loss:0.4351, head_kd:2.9182, heading_loss:0.0580, offset2d_loss:0.2193, offset3d_loss:0.2104, seg_loss:0.1308, size2d_loss:0.3772, size3d_loss:0.0741,
+2023-01-23 06:00:07,438   INFO  ------ TRAIN EPOCH 147 ------
+2023-01-23 06:00:07,439   INFO  Learning Rate: 0.000010
+2023-01-23 06:00:08,377   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 06:02:23,837   INFO  BATCH[0200/0232] affinity_kd:4.7457, backbone_loss_l1:0.1266, depth_loss:0.4112, head_kd:2.8921, heading_loss:0.0582, offset2d_loss:0.2175, offset3d_loss:0.2093, seg_loss:0.1283, size2d_loss:0.3755, size3d_loss:0.0734,
+2023-01-23 06:02:41,998   INFO  ------ TRAIN EPOCH 148 ------
+2023-01-23 06:02:41,998   INFO  Learning Rate: 0.000010
+2023-01-23 06:02:42,904   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 06:04:58,299   INFO  BATCH[0200/0232] affinity_kd:4.7335, backbone_loss_l1:0.1291, depth_loss:0.4192, head_kd:2.9171, heading_loss:0.0623, offset2d_loss:0.2120, offset3d_loss:0.2091, seg_loss:0.1295, size2d_loss:0.3760, size3d_loss:0.0740,
+2023-01-23 06:05:16,332   INFO  ------ TRAIN EPOCH 149 ------
+2023-01-23 06:05:16,333   INFO  Learning Rate: 0.000010
+2023-01-23 06:05:17,150   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 06:07:29,886   INFO  BATCH[0200/0232] affinity_kd:4.7537, backbone_loss_l1:0.1289, depth_loss:0.4010, head_kd:2.9505, heading_loss:0.0579, offset2d_loss:0.2232, offset3d_loss:0.2118, seg_loss:0.1262, size2d_loss:0.3891, size3d_loss:0.0730,
+2023-01-23 06:07:47,816   INFO  ------ TRAIN EPOCH 150 ------
+2023-01-23 06:07:47,817   INFO  Learning Rate: 0.000010
+2023-01-23 06:07:48,652   INFO  Weights:  depth_:1.0000, heading_:1.0000, offset2d_:1.0000, offset3d_:1.0000, seg_:1.0000, size2d_:1.0000, size3d_:1.0000,
+2023-01-23 06:10:04,182   INFO  BATCH[0200/0232] affinity_kd:4.7069, backbone_loss_l1:0.1283, depth_loss:0.4223, head_kd:2.9106, heading_loss:0.0589, offset2d_loss:0.2159, offset3d_loss:0.2099, seg_loss:0.1325, size2d_loss:0.3779, size3d_loss:0.0739,
+2023-01-23 06:10:22,197   INFO  ------ EVAL EPOCH 150 ------
+2023-01-23 06:12:03,101   INFO  ------------------evalute model: EPOCH_150--------------------
+2023-01-23 06:12:03,101   INFO  ********************Car********************
+2023-01-23 06:12:08,018   INFO  bbox@0.70 [99.27438654455608, 93.50523247354167, 86.09548815751371]
+2023-01-23 06:12:08,019   INFO  bev@0.70  [36.41301266336434, 26.228123006246594, 23.36742468110807]
+2023-01-23 06:12:08,019   INFO  3d@0.70   [27.386400186756067, 19.06183512834251, 16.740121438709895]
+2023-01-23 06:12:08,019   INFO  aos       [98.83586606810347, 92.65194583893482, 84.46176051928308]
+2023-01-23 06:12:08,019   INFO  bev@0.50  [72.66495429158219, 55.783486269322545, 50.622760912565]
+2023-01-23 06:12:08,019   INFO  3d@0.50   [68.58269701828617, 52.10688282443223, 47.00082500208131]
+2023-01-23 06:12:08,019   INFO  bev@0.30  [89.73297635886168, 74.48362894297766, 67.3279027620704]
+2023-01-23 06:12:08,019   INFO  3d@0.30   [87.09312544960073, 71.98442747393706, 66.5932909919361]
+2023-01-23 06:12:08,019   INFO  
+
+2023-01-23 06:12:08,048   INFO  ==> Saving to checkpoint 'kitti_models/logs/monodistill/checkpoints/checkpoint_epoch_150'

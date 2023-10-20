@@ -72,10 +72,61 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py --config configs/monoskd.
 
 ## Pretrained Model
 
-To ease the usage, we will provide the pre-trained model.
+To ease the usage, we will provide the pre-trained model at [Google Drive](https://drive.google.com/file/d/1gy6sviLT9yLOLYNs7dzYjWrj02s0-u8O/view?usp=sharing)
 
 Considering that the trained model usually contains the weights of the teacher network, we use the script of `tools/pth_transfer.py` to delete the teacher network weights.
 
 We provide the model reported in the paper for everyone to verify (`mAP=20.21`).
 
 It is worth noting that `drop_last = True` during the training process, so the final inference result will have negligible accuracy error, which is reasonable.
+
+Here we give the comparison.
+
+<table align="center">
+    <tr>
+        <td rowspan="2",div align="center">Models</td>
+        <td colspan="3",div align="center">Car@BEV IoU=0.7</td>    
+        <td colspan="3",div align="center">Car@3D IoU=0.7</td>  
+    </tr>
+    <tr>
+        <td div align="center">Easy</td> 
+        <td div align="center">Mod</td> 
+        <td div align="center">Hard</td> 
+        <td div align="center">Easy</td> 
+        <td div align="center">Mod</td> 
+        <td div align="center">Hard</td>  
+    </tr>
+    <tr>
+        <td div align="center">original paper</td>
+        <td div align="center">37.66</td> 
+        <td div align="center">26.41</td> 
+        <td div align="center">23.39</td> 
+        <td div align="center">28.91</td> 
+        <td div align="center">20.21</td> 
+        <td div align="center">16.99</td> 
+    </tr>    
+    <tr>
+        <td div align="center">this repo</td>
+        <td div align="center">37.66</td> 
+        <td div align="center">26.41</td> 
+        <td div align="center">23.39</td> 
+        <td div align="center">28.89</td> 
+        <td div align="center">20.19</td> 
+        <td div align="center">16.98</td> 
+    </tr>
+</table>
+
+<!-- ## Citation
+
+```
+@inproceedings{peng2022did,
+  title={DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection},
+  author={Peng, Liang and Wu, Xiaopei and Yang, Zheng and Liu, Haifeng and Cai, Deng},
+  booktitle={European Conference on Computer Vision},
+  year={2022}
+}
+```
+
+## Acknowledgements
+
+This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [Second](https://github.com/traveller59/second.pytorch). Thanks for their great works! -->
