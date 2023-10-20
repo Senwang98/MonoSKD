@@ -6,7 +6,7 @@
 
 This is the PyTorch implementation of the paper MonoSKD: General Distillation Framework for Monocular 3D Object Detection via Spearman Correlation Coefficient
 , In ECAI'23, Sen Wang and Jin Zheng.
-[[paper]](https://arxiv.org/abs/2310.11316) 
+[[paper]](https://arxiv.org/abs/2310.11316)
 
 ## Abstract
 
@@ -121,7 +121,9 @@ Here we give the comparison.
     </tr>
 </table>
 
-## Citation
+## Citation & Contact
+
+If you have any questions, please contact me: buaa_wangsen@buaa.edu.cn
 
 If you find our work helpful, you can cite our paper
 
@@ -137,4 +139,4 @@ TODO: add citation links
 
 ## Acknowledgements
 
-This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [DID-M3D](https://github.com/SPengLiang/DID-M3D). Thanks for their great works!
+This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [DID-M3D](https://github.com/SPengLiang/DID-M3D) and [mmRazor](https://github.com/open-mmlab/mmrazor). Thanks for their great works!
