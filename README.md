@@ -2,6 +2,10 @@
 
 <p align="center"> <img src='img/MonoSKD.png' align="center" height="350px"> </p>
 
+## Introduction
+
+This is the PyTorch implementation of the paper DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection, In ECAI'23, Sen Wang and Jin Zheng.
+[[paper]](https://arxiv.org/abs/2310.11316) 
 
 ## Abstract
 
@@ -116,17 +120,18 @@ Here we give the comparison.
     </tr>
 </table>
 
-<!-- ## Citation
+## Citation
 
-```
+TODO
+<!-- ```
 @inproceedings{peng2022did,
   title={DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection},
   author={Peng, Liang and Wu, Xiaopei and Yang, Zheng and Liu, Haifeng and Cai, Deng},
   booktitle={European Conference on Computer Vision},
   year={2022}
 }
-```
+``` -->
 
 ## Acknowledgements
 
-This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [Second](https://github.com/traveller59/second.pytorch). Thanks for their great works! -->
+This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [DID-M3D](https://github.com/SPengLiang/DID-M3D). Thanks for their great works!
