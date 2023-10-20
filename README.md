@@ -4,7 +4,8 @@
 
 ## Introduction
 
-This is the PyTorch implementation of the paper DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection, In ECAI'23, Sen Wang and Jin Zheng.
+This is the PyTorch implementation of the paper MonoSKD: General Distillation Framework for Monocular 3D Object Detection via Spearman Correlation Coefficient
+, In ECAI'23, Sen Wang and Jin Zheng.
 [[paper]](https://arxiv.org/abs/2310.11316) 
 
 ## Abstract
@@ -122,13 +123,15 @@ Here we give the comparison.
 
 ## Citation
 
-TODO
+If you find our work helpful, you can cite our paper
+
+TODO: add citation links
 <!-- ```
 @inproceedings{peng2022did,
   title={DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection},
   author={Peng, Liang and Wu, Xiaopei and Yang, Zheng and Liu, Haifeng and Cai, Deng},
   booktitle={European Conference on Computer Vision},
-  year={2022}
+  year={2023}
 }
 ``` -->
 
