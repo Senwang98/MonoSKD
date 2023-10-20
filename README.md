@@ -139,4 +139,4 @@ TODO: add citation links
 
 ## Acknowledgements
 
-This respository is mainly based on [GUPNet](https://github.com/SuperMHP/GUPNet), and it also benefits from [DID-M3D](https://github.com/SPengLiang/DID-M3D) and [mmRazor](https://github.com/open-mmlab/mmrazor). Thanks for their great works!
+This respository is mainly based on [DID-M3D](https://github.com/SPengLiang/DID-M3D), and it also benefits from [mmRazor](https://github.com/open-mmlab/mmrazor). Thanks for their great works!
