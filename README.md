@@ -72,4 +72,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py --config configs/monoskd.
 
 ## Pretrained Model
 
-To ease the usage, we will provide the pre-trained model upon accepted.
+To ease the usage, we will provide the pre-trained model.
+
+Considering that the trained model usually contains the weights of the teacher network, we use the script of `tools/pth_transfer.py` to delete the teacher network weights.
+
+We provide the model reported in the paper for everyone to verify (`mAP=20.21`).
+
+It is worth noting that `drop_last = True` during the training process, so the final inference result will have negligible accuracy error, which is reasonable.
