@@ -136,6 +136,16 @@ TODO: add citation links
   year={2023}
 }
 ``` -->
+```
+@misc{wang2023monoskd,
+      title={MonoSKD: General Distillation Framework for Monocular 3D Object Detection via Spearman Correlation Coefficient}, 
+      author={Sen Wang and Jin Zheng},
+      year={2023},
+      eprint={2310.11316},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## Acknowledgements
 
