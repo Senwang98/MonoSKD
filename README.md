@@ -1,4 +1,4 @@
-# [🚀MonoSKD: General Distillation Framework for Monocular 3D Object Detection via Spearman Correlation Coefficient](https://arxiv.org/abs/2310.11316)
+# [🚀MonoSKD](https://arxiv.org/abs/2310.11316)
 
 <p align="center"> <img src='img/MonoSKD.png' align="center" height="350px"> </p>
 
