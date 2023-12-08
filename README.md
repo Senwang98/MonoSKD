@@ -1,24 +1,32 @@
-# MonoSKD
+# [**MonoSKD**](https://arxiv.org/abs/2310.11316)
 
 <p align="center"> <img src='img/MonoSKD.png' align="center" height="350px"> </p>
 
-## Introduction
+## **🚀 Introduction**
 
 This is the PyTorch implementation of the paper MonoSKD: General Distillation Framework for Monocular 3D Object Detection via Spearman Correlation Coefficient
 , In ECAI'23, Sen Wang and Jin Zheng.
-[[paper]](https://arxiv.org/abs/2310.11316)
+[[`📕Paper`]](https://arxiv.org/abs/2310.11316)
 
-## Abstract
+## **🔥 Abstract**
 
 Monocular 3D object detection is an inherently ill-posed problem, as it is challenging to predict accurate 3D localization from a single image. Existing monocular 3D detection knowledge distillation methods usually project the LiDAR onto the image plane and train the teacher network accordingly. Transferring LiDAR-based model knowledge to RGB-based models is more complex, so a general distillation strategy is needed. To alleviate cross-modal problem, we propose **MonoSKD**, a novel **K**nowledge **D**istillation framework for **Mono**cular 3D detection based on **S**pearman correlation coefficient, to learn the relative correlation between cross-modal features. Considering the large gap between these features, strict alignment of features may mislead the training, so we propose a looser Spearman loss. Furthermore, by selecting appropriate distillation locations and removing redundant modules, our scheme saves more GPU resources and trains faster than existing methods. Extensive experiments are performed to verify the effectiveness of our framework on the challenging KITTI 3D object detection benchmark. Our method achieves state-of-the-art performance until submission with no additional inference computational cost. Our code will be made public once accepted.
 
-## Overview
+
+## **🍇 Updates**
+- **`TODO`** Release the codes of MonoAux (Under Review), which achieves 18.55mAP without using **KITTI Raw dataset**.
+- **`TODO`** Release the codes of MMRazor for 2D object detection task.
+- **`2023/12/08`** Release the checkpoint of teacher and student.
+- **`2023/10/21`** Release the checkpoint of our distilled DID-M3D.
+- **`2023/07/22`** Release the codes of our MonoSKD framework.
+
+## **📙 Overview**
 
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Pretrained Model](#pretrained-model)
 
-## Installation
+## **🍰 Installation**
 
 ### Installation Steps
 
@@ -34,7 +42,7 @@ b. Install the dependent libraries as follows:
 
 * We test this repository on Nvidia 3090 GPUs and Ubuntu 18.04. You can also follow the install instructions in [GUPNet](https://github.com/SuperMHP/GUPNet) (This respository is based on it) to perform experiments with lower PyTorch/GPU versions.
 
-## Getting Started
+## **📍 Getting Started**
 
 ### Dataset Preparation
 
@@ -124,7 +132,7 @@ Here we give the comparison.
     </tr>
 </table>
 
-## Citation & Contact
+## **💚 Citation & Contact**
 
 If you have any questions, please contact me: buaa_wangsen@buaa.edu.cn
 
@@ -149,6 +157,6 @@ If you find our work helpful, you can cite our paper
 }
 ```
 
-## Acknowledgements
+## **🎵 Acknowledgements**
 
 This respository is mainly based on [DID-M3D](https://github.com/SPengLiang/DID-M3D), and it also benefits from [mmRazor](https://github.com/open-mmlab/mmrazor). Thanks for their great works!
