@@ -81,7 +81,7 @@ CUDA_VISIBLE_DEVICES=0 python tools/train_val.py --config config/monoskd.yaml -e
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py --config configs/monoskd.yaml
 ```
 
-## **✅ Pretrained Model**
+## **⛄️ Pretrained Model**
 
 To ease the usage, we will provide the pre-trained model at [Google Drive](https://drive.google.com/file/d/1gy6sviLT9yLOLYNs7dzYjWrj02s0-u8O/view?usp=sharing) 
 
