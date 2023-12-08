@@ -14,8 +14,6 @@ Monocular 3D object detection is an inherently ill-posed problem, as it is chall
 
 
 ## **🍇 Updates**
-- **`TODO`** Release the codes of [**MonoAux**](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=b9c415a01c88af12e5d79fb42f7260a4ab85c787), which achieves 18.55mAP without using [**KITTI Raw dataset**](https://www.cvlibs.net/datasets/kitti/raw_data.php).
-- **`TODO`** Release the codes of [**mmRazor**](https://github.com/open-mmlab/mmrazor) for 2D object detection task.
 - **`2023/12/08`** Release the checkpoint of teacher and student.
 - **`2023/10/21`** Release the checkpoint of our distilled [**DID-M3D**](https://github.com/SPengLiang/DID-M3D).
 - **`2023/07/22`** Release the codes of our **MonoSKD** framework.
