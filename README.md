@@ -79,8 +79,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py --config configs/monoskd.
 
 To ease the usage, we will provide the pre-trained model at [Google Drive](https://drive.google.com/file/d/1gy6sviLT9yLOLYNs7dzYjWrj02s0-u8O/view?usp=sharing) 
 
-We also provide the pre-trained **Teacher** model at [Google Drive](https://drive.google.com/file/d/1TxpAYE_kTs9FD0APzklOQbXRj1Kvf4G1/view?usp=sharing) 
-and pre-trained **Student** model at [Google Drive](https://drive.google.com/file/d/1Bc6o6DabmrHxUCB_6v_wA-Z4rTxKqslm/view?usp=sharing)
+We also provide the pre-trained **Teacher** model at [Google Drive](https://drive.google.com/file/d/1RYw2DmPWgvF314yaHM5QU4_1FQv8djZi/view?usp=sharing) 
+and pre-trained **Student** model at [Google Drive](https://drive.google.com/file/d/1VKiG1mPIHlJvZUHjniemZILLR0CMy_7a/view?usp=sharing)
 
 Considering that the trained model usually contains the weights of the teacher network, we use the script of `tools/pth_transfer.py` to delete the teacher network weights.
 
