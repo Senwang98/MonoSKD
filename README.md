@@ -130,7 +130,6 @@ If you have any questions, please contact me: buaa_wangsen@buaa.edu.cn
 
 If you find our work helpful, you can cite our paper
 
-TODO: add citation links
 <!-- ```
 @inproceedings{peng2022did,
   title={DID-M3D: Decoupling Instance Depth for Monocular 3D Object Detection},
